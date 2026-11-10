@@ -1974,6 +1974,11 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
         </div>
       </div>
 
+      <div id="languageSwitcher" role="group" aria-label="Interface language" class="flex items-center gap-1 bg-slate-100 border border-slate-200 p-1.5 rounded-xl shrink-0" dir="ltr">
+        <button id="langArBtn" type="button" lang="ar" aria-pressed="true" class="touch-btn px-3 py-2 rounded-lg font-bold text-xs sm:text-sm bg-white text-brand-700 shadow-sm">العربية</button>
+        <button id="langEnBtn" type="button" lang="en" aria-pressed="false" class="touch-btn px-3 py-2 rounded-lg font-bold text-xs sm:text-sm text-slate-600 hover:text-slate-900">English</button>
+      </div>
+
       <!-- Navigation Tabs (Fully Responsive on mobile & tablets) -->
       <nav role="tablist" aria-label="أدوات المستندات" class="grid grid-cols-2 sm:flex bg-slate-100 p-1.5 rounded-2xl border border-slate-200/80 w-full sm:w-auto gap-1">
         <button id="tabImgToPdf" type="button" role="tab" aria-selected="true" aria-controls="sectionImgToPdf" class="touch-btn flex items-center justify-center gap-2 px-3 sm:px-5 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-200 bg-white text-brand-700 shadow-sm">
@@ -4112,5 +4117,6 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
 })();
 
   </script>
+  <script src="./i18n.js" defer></script>
 </body>
 </html>
