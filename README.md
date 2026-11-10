@@ -1,6 +1,6 @@
 # PDF Studio
 
-A browser-based PDF and image utility with an Arabic, right-to-left (RTL), responsive interface. **PDF Studio** converts images into A4 PDF documents, extracts selected PDF pages, and exports PDF pages as images — without requiring a backend or an account.
+A browser-based PDF and image utility with bilingual Arabic/English, responsive RTL/LTR interfaces. **PDF Studio** converts images into A4 PDF documents, extracts selected PDF pages, and exports PDF pages as images — without requiring a backend or an account.
 
 **Live application:** https://abd19990044-commits.github.io/pdfstudio/
 
@@ -36,7 +36,7 @@ A browser-based PDF and image utility with an Arabic, right-to-left (RTL), respo
 4. Set your preferred conversion, selection, or export options.
 5. Run the processing step, then use the separate **Download** action.
 
-> **Language:** The application interface is currently in Arabic (RTL); this README is provided in English.
+> **Language:** Switch between Arabic (RTL) and English (LTR) using the language selector in the header. Your choice is saved locally in the browser.
 
 ## Run locally
 
@@ -101,7 +101,8 @@ Site URL: https://abd19990044-commits.github.io/pdfstudio/
 
 ```text
 pdfstudio/
-├── index.html                  # Self-contained interface and application logic
+├── index.html                  # Main interface and document-processing logic
+├── i18n.js                     # Arabic/English translations and language selector
 ├── README.md                   # Project documentation
 ├── LICENSE                     # Apache License 2.0
 └── .github/
