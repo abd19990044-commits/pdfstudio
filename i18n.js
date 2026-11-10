@@ -335,7 +335,7 @@
     if (!ar || !en) return;
     ar.addEventListener("click", () => applyLanguage("ar"));
     en.addEventListener("click", () => applyLanguage("en"));
-    let preferred = "ar";
+    let preferred = "en";
     try {
       const stored = localStorage.getItem(STORAGE_KEY);
       if (stored === "ar" || stored === "en") preferred = stored;
