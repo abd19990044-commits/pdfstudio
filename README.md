@@ -36,7 +36,7 @@ A browser-based PDF and image utility with bilingual Arabic/English, responsive 
 4. Set your preferred conversion, selection, or export options.
 5. Run the processing step, then use the separate **Download** action.
 
-> **Language:** Switch between Arabic (RTL) and English (LTR) using the language selector in the header. Your choice is saved locally in the browser.
+> **Language:** Switch between Arabic (RTL) and English (LTR) using the language selector in the header. English is the default for first-time visitors; your selected language is saved locally in the browser.
 
 ## Run locally
 
