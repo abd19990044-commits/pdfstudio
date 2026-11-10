@@ -1,0 +1,4116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#4f46e5">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-hr6rwAm5x53vOHkN33UsoZ9ga9i2GLNfxjOGUru079Y=' blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' data: https://cdnjs.cloudflare.com; img-src 'self' data: blob:; worker-src 'self' blob:; connect-src 'self' blob: https://cdnjs.cloudflare.com; object-src 'none'; base-uri 'none'; form-action 'none';">
+  <title>منصة تحويل الصور وتقسيم ملفات PDF الاحترافية</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Production CSS compiled from Tailwind utilities; no Tailwind runtime/CDN required -->
+  <style id="compiledUtilityStyles">
+/*! tailwindcss v4.1.10 | MIT License | https://tailwindcss.com */
+@layer properties;
+:root, :host {
+  --font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+  --color-red-50: oklch(97.1% 0.013 17.38);
+  --color-red-200: oklch(88.5% 0.062 18.334);
+  --color-red-500: oklch(63.7% 0.237 25.331);
+  --color-red-600: oklch(57.7% 0.245 27.325);
+  --color-red-700: oklch(50.5% 0.213 27.518);
+  --color-amber-200: oklch(92.4% 0.12 95.746);
+  --color-amber-500: oklch(76.9% 0.188 70.08);
+  --color-emerald-50: oklch(97.9% 0.021 166.113);
+  --color-emerald-100: oklch(95% 0.052 163.051);
+  --color-emerald-200: oklch(90.5% 0.093 164.15);
+  --color-emerald-500: oklch(69.6% 0.17 162.48);
+  --color-emerald-600: oklch(59.6% 0.145 163.225);
+  --color-emerald-700: oklch(50.8% 0.118 165.612);
+  --color-indigo-50: oklch(96.2% 0.018 272.314);
+  --color-indigo-500: oklch(58.5% 0.233 277.117);
+  --color-indigo-600: oklch(51.1% 0.262 276.966);
+  --color-indigo-700: oklch(45.7% 0.24 277.023);
+  --color-rose-50: oklch(96.9% 0.015 12.422);
+  --color-rose-100: oklch(94.1% 0.03 12.58);
+  --color-rose-200: oklch(89.2% 0.058 10.001);
+  --color-rose-300: oklch(81% 0.117 11.638);
+  --color-rose-500: oklch(64.5% 0.246 16.439);
+  --color-rose-600: oklch(58.6% 0.253 17.585);
+  --color-rose-700: oklch(51.4% 0.222 16.935);
+  --color-slate-50: oklch(98.4% 0.003 247.858);
+  --color-slate-100: oklch(96.8% 0.007 247.896);
+  --color-slate-200: oklch(92.9% 0.013 255.508);
+  --color-slate-300: oklch(86.9% 0.022 252.894);
+  --color-slate-400: oklch(70.4% 0.04 256.788);
+  --color-slate-500: oklch(55.4% 0.046 257.417);
+  --color-slate-600: oklch(44.6% 0.043 257.281);
+  --color-slate-700: oklch(37.2% 0.044 257.287);
+  --color-slate-800: oklch(27.9% 0.041 260.031);
+  --color-slate-900: oklch(20.8% 0.042 265.755);
+  --color-white: #fff;
+  --spacing: 0.25rem;
+  --container-sm: 24rem;
+  --container-md: 28rem;
+  --container-7xl: 80rem;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: calc(1 / 0.75);
+  --text-sm: 0.875rem;
+  --text-sm--line-height: calc(1.25 / 0.875);
+  --text-base: 1rem;
+  --text-base--line-height: calc(1.5 / 1);
+  --text-lg: 1.125rem;
+  --text-lg--line-height: calc(1.75 / 1.125);
+  --text-xl: 1.25rem;
+  --text-xl--line-height: calc(1.75 / 1.25);
+  --text-3xl: 1.875rem;
+  --text-3xl--line-height: calc(2.25 / 1.875);
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+  --tracking-tight: -0.025em;
+  --tracking-wider: 0.05em;
+  --leading-relaxed: 1.625;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --animate-spin: spin 1s linear infinite;
+  --blur-sm: 8px;
+  --blur-md: 12px;
+  --default-transition-duration: 150ms;
+  --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --default-font-family: var(--font-sans);
+  --default-mono-font-family: var(--font-mono);
+  --color-brand-50: #eef2ff;
+  --color-brand-100: #e0e7ff;
+  --color-brand-200: #c7d2fe;
+  --color-brand-300: #a5b4fc;
+  --color-brand-500: #6366f1;
+  --color-brand-600: #4f46e5;
+  --color-brand-700: #4338ca;
+  --color-brand-800: #3730a3;
+}
+*, ::after, ::before, ::backdrop, ::file-selector-button {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0 solid;
+}
+html, :host {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji');
+  font-feature-settings: var(--default-font-feature-settings, normal);
+  font-variation-settings: var(--default-font-variation-settings, normal);
+  -webkit-tap-highlight-color: transparent;
+}
+hr {
+  height: 0;
+  color: inherit;
+  border-top-width: 1px;
+}
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+a {
+  color: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+b, strong {
+  font-weight: bolder;
+}
+code, kbd, samp, pre {
+  font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace);
+  font-feature-settings: var(--default-mono-font-feature-settings, normal);
+  font-variation-settings: var(--default-mono-font-variation-settings, normal);
+  font-size: 1em;
+}
+small {
+  font-size: 80%;
+}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+table {
+  text-indent: 0;
+  border-color: inherit;
+  border-collapse: collapse;
+}
+:-moz-focusring {
+  outline: auto;
+}
+progress {
+  vertical-align: baseline;
+}
+summary {
+  display: list-item;
+}
+ol, ul, menu {
+  list-style: none;
+}
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: block;
+  vertical-align: middle;
+}
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+button, input, select, optgroup, textarea, ::file-selector-button {
+  font: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  border-radius: 0;
+  background-color: transparent;
+  opacity: 1;
+}
+:where(select:is([multiple], [size])) optgroup {
+  font-weight: bolder;
+}
+:where(select:is([multiple], [size])) optgroup option {
+  padding-inline-start: 20px;
+}
+::file-selector-button {
+  margin-inline-end: 4px;
+}
+::placeholder {
+  opacity: 1;
+}
+@supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+  ::placeholder {
+    color: currentcolor;
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, currentcolor 50%, transparent);
+    }
+  }
+}
+textarea {
+  resize: vertical;
+}
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-date-and-time-value {
+  min-height: 1lh;
+  text-align: inherit;
+}
+::-webkit-datetime-edit {
+  display: inline-flex;
+}
+::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+}
+::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+  padding-block: 0;
+}
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+button, input:where([type='button'], [type='reset'], [type='submit']), ::file-selector-button {
+  appearance: button;
+}
+::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+  height: auto;
+}
+[hidden]:where(:not([hidden='until-found'])) {
+  display: none !important;
+}
+.pointer-events-auto {
+  pointer-events: auto;
+}
+.pointer-events-none {
+  pointer-events: none;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.relative {
+  position: relative;
+}
+.sticky {
+  position: sticky;
+}
+.inset-0 {
+  inset: calc(var(--spacing) * 0);
+}
+.top-0 {
+  top: calc(var(--spacing) * 0);
+}
+.top-1\.5 {
+  top: calc(var(--spacing) * 1.5);
+}
+.top-2\.5 {
+  top: calc(var(--spacing) * 2.5);
+}
+.top-5 {
+  top: calc(var(--spacing) * 5);
+}
+.right-1\.5 {
+  right: calc(var(--spacing) * 1.5);
+}
+.right-2\.5 {
+  right: calc(var(--spacing) * 2.5);
+}
+.left-5 {
+  left: calc(var(--spacing) * 5);
+}
+.z-20 {
+  z-index: 20;
+}
+.z-40 {
+  z-index: 40;
+}
+.z-50 {
+  z-index: 50;
+}
+.container {
+  width: 100%;
+  @media (width >= 40rem) {
+    max-width: 40rem;
+  }
+  @media (width >= 48rem) {
+    max-width: 48rem;
+  }
+  @media (width >= 64rem) {
+    max-width: 64rem;
+  }
+  @media (width >= 80rem) {
+    max-width: 80rem;
+  }
+  @media (width >= 96rem) {
+    max-width: 96rem;
+  }
+}
+.mx-auto {
+  margin-inline: auto;
+}
+.mt-0\.5 {
+  margin-top: calc(var(--spacing) * 0.5);
+}
+.mt-1 {
+  margin-top: calc(var(--spacing) * 1);
+}
+.mt-2 {
+  margin-top: calc(var(--spacing) * 2);
+}
+.mt-auto {
+  margin-top: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.mb-1 {
+  margin-bottom: calc(var(--spacing) * 1);
+}
+.mb-2 {
+  margin-bottom: calc(var(--spacing) * 2);
+}
+.mb-3 {
+  margin-bottom: calc(var(--spacing) * 3);
+}
+.mb-4 {
+  margin-bottom: calc(var(--spacing) * 4);
+}
+.mb-6 {
+  margin-bottom: calc(var(--spacing) * 6);
+}
+.ml-1 {
+  margin-left: calc(var(--spacing) * 1);
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.hidden {
+  display: none;
+}
+.h-1\.5 {
+  height: calc(var(--spacing) * 1.5);
+}
+.h-5 {
+  height: calc(var(--spacing) * 5);
+}
+.h-8 {
+  height: calc(var(--spacing) * 8);
+}
+.h-9 {
+  height: calc(var(--spacing) * 9);
+}
+.h-10 {
+  height: calc(var(--spacing) * 10);
+}
+.h-12 {
+  height: calc(var(--spacing) * 12);
+}
+.h-14 {
+  height: calc(var(--spacing) * 14);
+}
+.h-20 {
+  height: calc(var(--spacing) * 20);
+}
+.h-32 {
+  height: calc(var(--spacing) * 32);
+}
+.h-36 {
+  height: calc(var(--spacing) * 36);
+}
+.h-44 {
+  height: calc(var(--spacing) * 44);
+}
+.max-h-48 {
+  max-height: calc(var(--spacing) * 48);
+}
+.max-h-\[400px\] {
+  max-height: 400px;
+}
+.max-h-full {
+  max-height: 100%;
+}
+.min-h-\[18px\] {
+  min-height: 18px;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+.w-5 {
+  width: calc(var(--spacing) * 5);
+}
+.w-8 {
+  width: calc(var(--spacing) * 8);
+}
+.w-9 {
+  width: calc(var(--spacing) * 9);
+}
+.w-10 {
+  width: calc(var(--spacing) * 10);
+}
+.w-12 {
+  width: calc(var(--spacing) * 12);
+}
+.w-14 {
+  width: calc(var(--spacing) * 14);
+}
+.w-20 {
+  width: calc(var(--spacing) * 20);
+}
+.w-full {
+  width: 100%;
+}
+.max-w-7xl {
+  max-width: var(--container-7xl);
+}
+.max-w-\[180px\] {
+  max-width: 180px;
+}
+.max-w-full {
+  max-width: 100%;
+}
+.max-w-md {
+  max-width: var(--container-md);
+}
+.max-w-sm {
+  max-width: var(--container-sm);
+}
+.min-w-0 {
+  min-width: calc(var(--spacing) * 0);
+}
+.flex-1 {
+  flex: 1;
+}
+.shrink-0 {
+  flex-shrink: 0;
+}
+.-translate-y-2 {
+  --tw-translate-y: calc(var(--spacing) * -2);
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+}
+.translate-y-2 {
+  --tw-translate-y: calc(var(--spacing) * 2);
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+}
+.transform {
+  transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+}
+.animate-spin {
+  animation: var(--animate-spin);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-stretch {
+  align-items: stretch;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.gap-1 {
+  gap: calc(var(--spacing) * 1);
+}
+.gap-1\.5 {
+  gap: calc(var(--spacing) * 1.5);
+}
+.gap-2 {
+  gap: calc(var(--spacing) * 2);
+}
+.gap-2\.5 {
+  gap: calc(var(--spacing) * 2.5);
+}
+.gap-3 {
+  gap: calc(var(--spacing) * 3);
+}
+.gap-4 {
+  gap: calc(var(--spacing) * 4);
+}
+.gap-6 {
+  gap: calc(var(--spacing) * 6);
+}
+.space-y-3 {
+  :where(& > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+  }
+}
+.space-y-4 {
+  :where(& > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+  }
+}
+.space-y-6 {
+  :where(& > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+  }
+}
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-y-auto {
+  overflow-y: auto;
+}
+.rounded {
+  border-radius: 0.25rem;
+}
+.rounded-2xl {
+  border-radius: var(--radius-2xl);
+}
+.rounded-3xl {
+  border-radius: var(--radius-3xl);
+}
+.rounded-full {
+  border-radius: calc(infinity * 1px);
+}
+.rounded-lg {
+  border-radius: var(--radius-lg);
+}
+.rounded-md {
+  border-radius: var(--radius-md);
+}
+.rounded-xl {
+  border-radius: var(--radius-xl);
+}
+.border {
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+}
+.border-2 {
+  border-style: var(--tw-border-style);
+  border-width: 2px;
+}
+.border-4 {
+  border-style: var(--tw-border-style);
+  border-width: 4px;
+}
+.border-t {
+  border-top-style: var(--tw-border-style);
+  border-top-width: 1px;
+}
+.border-t-2 {
+  border-top-style: var(--tw-border-style);
+  border-top-width: 2px;
+}
+.border-b {
+  border-bottom-style: var(--tw-border-style);
+  border-bottom-width: 1px;
+}
+.border-dashed {
+  --tw-border-style: dashed;
+  border-style: dashed;
+}
+.border-amber-200 {
+  border-color: var(--color-amber-200);
+}
+.border-brand-200 {
+  border-color: var(--color-brand-200);
+}
+.border-brand-600 {
+  border-color: var(--color-brand-600);
+}
+.border-emerald-200 {
+  border-color: var(--color-emerald-200);
+}
+.border-red-200 {
+  border-color: var(--color-red-200);
+}
+.border-rose-200 {
+  border-color: var(--color-rose-200);
+}
+.border-slate-100 {
+  border-color: var(--color-slate-100);
+}
+.border-slate-200 {
+  border-color: var(--color-slate-200);
+}
+.border-slate-200\/80 {
+  border-color: color-mix(in srgb, oklch(92.9% 0.013 255.508) 80%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    border-color: color-mix(in oklab, var(--color-slate-200) 80%, transparent);
+  }
+}
+.border-slate-200\/90 {
+  border-color: color-mix(in srgb, oklch(92.9% 0.013 255.508) 90%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    border-color: color-mix(in oklab, var(--color-slate-200) 90%, transparent);
+  }
+}
+.border-slate-300 {
+  border-color: var(--color-slate-300);
+}
+.border-t-brand-600 {
+  border-top-color: var(--color-brand-600);
+}
+.border-t-emerald-600 {
+  border-top-color: var(--color-emerald-600);
+}
+.bg-brand-50 {
+  background-color: var(--color-brand-50);
+}
+.bg-brand-50\/40 {
+  background-color: color-mix(in srgb, #eef2ff 40%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab, var(--color-brand-50) 40%, transparent);
+  }
+}
+.bg-brand-100 {
+  background-color: var(--color-brand-100);
+}
+.bg-brand-600 {
+  background-color: var(--color-brand-600);
+}
+.bg-emerald-50 {
+  background-color: var(--color-emerald-50);
+}
+.bg-emerald-600 {
+  background-color: var(--color-emerald-600);
+}
+.bg-indigo-50 {
+  background-color: var(--color-indigo-50);
+}
+.bg-indigo-600 {
+  background-color: var(--color-indigo-600);
+}
+.bg-red-50 {
+  background-color: var(--color-red-50);
+}
+.bg-red-600 {
+  background-color: var(--color-red-600);
+}
+.bg-rose-50 {
+  background-color: var(--color-rose-50);
+}
+.bg-slate-50 {
+  background-color: var(--color-slate-50);
+}
+.bg-slate-100 {
+  background-color: var(--color-slate-100);
+}
+.bg-slate-800 {
+  background-color: var(--color-slate-800);
+}
+.bg-slate-900\/60 {
+  background-color: color-mix(in srgb, oklch(20.8% 0.042 265.755) 60%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab, var(--color-slate-900) 60%, transparent);
+  }
+}
+.bg-slate-900\/75 {
+  background-color: color-mix(in srgb, oklch(20.8% 0.042 265.755) 75%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab, var(--color-slate-900) 75%, transparent);
+  }
+}
+.bg-white {
+  background-color: var(--color-white);
+}
+.bg-white\/90 {
+  background-color: color-mix(in srgb, #fff 90%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab, var(--color-white) 90%, transparent);
+  }
+}
+.bg-gradient-to-tr {
+  --tw-gradient-position: to top right in oklab;
+  background-image: linear-gradient(var(--tw-gradient-stops));
+}
+.from-brand-600 {
+  --tw-gradient-from: var(--color-brand-600);
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+}
+.to-indigo-500 {
+  --tw-gradient-to: var(--color-indigo-500);
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+}
+.object-contain {
+  object-fit: contain;
+}
+.p-1 {
+  padding: calc(var(--spacing) * 1);
+}
+.p-1\.5 {
+  padding: calc(var(--spacing) * 1.5);
+}
+.p-2 {
+  padding: calc(var(--spacing) * 2);
+}
+.p-2\.5 {
+  padding: calc(var(--spacing) * 2.5);
+}
+.p-3 {
+  padding: calc(var(--spacing) * 3);
+}
+.p-3\.5 {
+  padding: calc(var(--spacing) * 3.5);
+}
+.p-4 {
+  padding: calc(var(--spacing) * 4);
+}
+.p-6 {
+  padding: calc(var(--spacing) * 6);
+}
+.p-8 {
+  padding: calc(var(--spacing) * 8);
+}
+.px-1 {
+  padding-inline: calc(var(--spacing) * 1);
+}
+.px-1\.5 {
+  padding-inline: calc(var(--spacing) * 1.5);
+}
+.px-2 {
+  padding-inline: calc(var(--spacing) * 2);
+}
+.px-2\.5 {
+  padding-inline: calc(var(--spacing) * 2.5);
+}
+.px-3 {
+  padding-inline: calc(var(--spacing) * 3);
+}
+.px-4 {
+  padding-inline: calc(var(--spacing) * 4);
+}
+.px-5 {
+  padding-inline: calc(var(--spacing) * 5);
+}
+.px-6 {
+  padding-inline: calc(var(--spacing) * 6);
+}
+.py-0\.5 {
+  padding-block: calc(var(--spacing) * 0.5);
+}
+.py-1 {
+  padding-block: calc(var(--spacing) * 1);
+}
+.py-1\.5 {
+  padding-block: calc(var(--spacing) * 1.5);
+}
+.py-2 {
+  padding-block: calc(var(--spacing) * 2);
+}
+.py-2\.5 {
+  padding-block: calc(var(--spacing) * 2.5);
+}
+.py-3 {
+  padding-block: calc(var(--spacing) * 3);
+}
+.py-3\.5 {
+  padding-block: calc(var(--spacing) * 3.5);
+}
+.py-4 {
+  padding-block: calc(var(--spacing) * 4);
+}
+.py-6 {
+  padding-block: calc(var(--spacing) * 6);
+}
+.py-8 {
+  padding-block: calc(var(--spacing) * 8);
+}
+.pt-2 {
+  padding-top: calc(var(--spacing) * 2);
+}
+.pt-4 {
+  padding-top: calc(var(--spacing) * 4);
+}
+.pt-6 {
+  padding-top: calc(var(--spacing) * 6);
+}
+.pb-4 {
+  padding-bottom: calc(var(--spacing) * 4);
+}
+.text-center {
+  text-align: center;
+}
+.font-mono {
+  font-family: var(--font-mono);
+}
+.text-3xl {
+  font-size: var(--text-3xl);
+  line-height: var(--tw-leading, var(--text-3xl--line-height));
+}
+.text-base {
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+}
+.text-lg {
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
+}
+.text-sm {
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+}
+.text-xl {
+  font-size: var(--text-xl);
+  line-height: var(--tw-leading, var(--text-xl--line-height));
+}
+.text-xs {
+  font-size: var(--text-xs);
+  line-height: var(--tw-leading, var(--text-xs--line-height));
+}
+.text-\[10px\] {
+  font-size: 10px;
+}
+.text-\[11px\] {
+  font-size: 11px;
+}
+.leading-relaxed {
+  --tw-leading: var(--leading-relaxed);
+  line-height: var(--leading-relaxed);
+}
+.font-black {
+  --tw-font-weight: var(--font-weight-black);
+  font-weight: var(--font-weight-black);
+}
+.font-bold {
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+}
+.font-extrabold {
+  --tw-font-weight: var(--font-weight-extrabold);
+  font-weight: var(--font-weight-extrabold);
+}
+.font-medium {
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+}
+.font-normal {
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+}
+.font-semibold {
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+}
+.tracking-tight {
+  --tw-tracking: var(--tracking-tight);
+  letter-spacing: var(--tracking-tight);
+}
+.tracking-wider {
+  --tw-tracking: var(--tracking-wider);
+  letter-spacing: var(--tracking-wider);
+}
+.text-amber-500 {
+  color: var(--color-amber-500);
+}
+.text-brand-500 {
+  color: var(--color-brand-500);
+}
+.text-brand-600 {
+  color: var(--color-brand-600);
+}
+.text-brand-700 {
+  color: var(--color-brand-700);
+}
+.text-emerald-500 {
+  color: var(--color-emerald-500);
+}
+.text-emerald-600 {
+  color: var(--color-emerald-600);
+}
+.text-emerald-700 {
+  color: var(--color-emerald-700);
+}
+.text-indigo-600 {
+  color: var(--color-indigo-600);
+}
+.text-red-500 {
+  color: var(--color-red-500);
+}
+.text-red-600 {
+  color: var(--color-red-600);
+}
+.text-rose-500 {
+  color: var(--color-rose-500);
+}
+.text-rose-600 {
+  color: var(--color-rose-600);
+}
+.text-slate-400 {
+  color: var(--color-slate-400);
+}
+.text-slate-500 {
+  color: var(--color-slate-500);
+}
+.text-slate-600 {
+  color: var(--color-slate-600);
+}
+.text-slate-700 {
+  color: var(--color-slate-700);
+}
+.text-slate-800 {
+  color: var(--color-slate-800);
+}
+.text-slate-900 {
+  color: var(--color-slate-900);
+}
+.text-transparent {
+  color: transparent;
+}
+.text-white {
+  color: var(--color-white);
+}
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.opacity-0 {
+  opacity: 0%;
+}
+.opacity-60 {
+  opacity: 60%;
+}
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.shadow-sm {
+  --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.ring-2 {
+  --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.shadow-brand-500\/20 {
+  --tw-shadow-color: color-mix(in srgb, #6366f1 20%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-brand-500) 20%, transparent) var(--tw-shadow-alpha), transparent);
+  }
+}
+.shadow-brand-500\/25 {
+  --tw-shadow-color: color-mix(in srgb, #6366f1 25%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-brand-500) 25%, transparent) var(--tw-shadow-alpha), transparent);
+  }
+}
+.shadow-emerald-500\/20 {
+  --tw-shadow-color: color-mix(in srgb, oklch(69.6% 0.17 162.48) 20%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-emerald-500) 20%, transparent) var(--tw-shadow-alpha), transparent);
+  }
+}
+.shadow-indigo-500\/20 {
+  --tw-shadow-color: color-mix(in srgb, oklch(58.5% 0.233 277.117) 20%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-indigo-500) 20%, transparent) var(--tw-shadow-alpha), transparent);
+  }
+}
+.ring-brand-500\/20 {
+  --tw-ring-color: color-mix(in srgb, #6366f1 20%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    --tw-ring-color: color-mix(in oklab, var(--color-brand-500) 20%, transparent);
+  }
+}
+.backdrop-blur-md {
+  --tw-backdrop-blur: blur(var(--blur-md));
+  -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+}
+.backdrop-blur-sm {
+  --tw-backdrop-blur: blur(var(--blur-sm));
+  -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+}
+.transition {
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+}
+.transition-all {
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+}
+.duration-200 {
+  --tw-duration: 200ms;
+  transition-duration: 200ms;
+}
+.duration-300 {
+  --tw-duration: 300ms;
+  transition-duration: 300ms;
+}
+.outline-none {
+  --tw-outline-style: none;
+  outline-style: none;
+}
+.group-hover\:scale-110 {
+  &:is(:where(.group):hover *) {
+    @media (hover: hover) {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+}
+.selection\:bg-brand-500 {
+  & *::selection {
+    background-color: var(--color-brand-500);
+  }
+  &::selection {
+    background-color: var(--color-brand-500);
+  }
+}
+.selection\:text-white {
+  & *::selection {
+    color: var(--color-white);
+  }
+  &::selection {
+    color: var(--color-white);
+  }
+}
+.hover\:border-brand-300 {
+  &:hover {
+    @media (hover: hover) {
+      border-color: var(--color-brand-300);
+    }
+  }
+}
+.hover\:border-brand-600 {
+  &:hover {
+    @media (hover: hover) {
+      border-color: var(--color-brand-600);
+    }
+  }
+}
+.hover\:border-red-200 {
+  &:hover {
+    @media (hover: hover) {
+      border-color: var(--color-red-200);
+    }
+  }
+}
+.hover\:border-rose-300 {
+  &:hover {
+    @media (hover: hover) {
+      border-color: var(--color-rose-300);
+    }
+  }
+}
+.hover\:bg-brand-50 {
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-brand-50);
+    }
+  }
+}
+.hover\:bg-brand-100 {
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-brand-100);
+    }
+  }
+}
+.hover\:bg-brand-700 {
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-brand-700);
+    }
+  }
+}
+.hover\:bg-emerald-100 {
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-emerald-100);
+    }
+  }
+}
+.hover\:bg-emerald-700 {
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-emerald-700);
+    }
+  }
+}
+.hover\:bg-indigo-700 {
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-indigo-700);
+    }
+  }
+}
+.hover\:bg-red-50 {
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-red-50);
+    }
+  }
+}
+.hover\:bg-red-700 {
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-red-700);
+    }
+  }
+}
+.hover\:bg-rose-50 {
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-rose-50);
+    }
+  }
+}
+.hover\:bg-rose-100 {
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-rose-100);
+    }
+  }
+}
+.hover\:bg-slate-100 {
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-slate-100);
+    }
+  }
+}
+.hover\:bg-slate-200 {
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-slate-200);
+    }
+  }
+}
+.hover\:bg-slate-900 {
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-slate-900);
+    }
+  }
+}
+.hover\:text-brand-700 {
+  &:hover {
+    @media (hover: hover) {
+      color: var(--color-brand-700);
+    }
+  }
+}
+.hover\:text-brand-800 {
+  &:hover {
+    @media (hover: hover) {
+      color: var(--color-brand-800);
+    }
+  }
+}
+.hover\:text-red-600 {
+  &:hover {
+    @media (hover: hover) {
+      color: var(--color-red-600);
+    }
+  }
+}
+.hover\:text-rose-700 {
+  &:hover {
+    @media (hover: hover) {
+      color: var(--color-rose-700);
+    }
+  }
+}
+.hover\:text-slate-900 {
+  &:hover {
+    @media (hover: hover) {
+      color: var(--color-slate-900);
+    }
+  }
+}
+.hover\:opacity-100 {
+  &:hover {
+    @media (hover: hover) {
+      opacity: 100%;
+    }
+  }
+}
+.hover\:shadow-md {
+  &:hover {
+    @media (hover: hover) {
+      --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+}
+.focus\:border-brand-600 {
+  &:focus {
+    border-color: var(--color-brand-600);
+  }
+}
+.focus\:border-emerald-500 {
+  &:focus {
+    border-color: var(--color-emerald-500);
+  }
+}
+.focus\:ring-2 {
+  &:focus {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+}
+.focus\:ring-brand-500 {
+  &:focus {
+    --tw-ring-color: var(--color-brand-500);
+  }
+}
+.focus\:outline-none {
+  &:focus {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+}
+.active\:scale-95 {
+  &:active {
+    --tw-scale-x: 95%;
+    --tw-scale-y: 95%;
+    --tw-scale-z: 95%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+}
+.active\:bg-brand-200 {
+  &:active {
+    background-color: var(--color-brand-200);
+  }
+}
+.active\:bg-brand-800 {
+  &:active {
+    background-color: var(--color-brand-800);
+  }
+}
+.active\:bg-rose-200 {
+  &:active {
+    background-color: var(--color-rose-200);
+  }
+}
+.active\:bg-slate-300 {
+  &:active {
+    background-color: var(--color-slate-300);
+  }
+}
+.disabled\:pointer-events-none {
+  &:disabled {
+    pointer-events: none;
+  }
+}
+.disabled\:opacity-30 {
+  &:disabled {
+    opacity: 30%;
+  }
+}
+.disabled\:opacity-40 {
+  &:disabled {
+    opacity: 40%;
+  }
+}
+.disabled\:opacity-50 {
+  &:disabled {
+    opacity: 50%;
+  }
+}
+.sm\:col-span-2 {
+  @media (width >= 40rem) {
+    grid-column: span 2 / span 2;
+  }
+}
+.sm\:flex {
+  @media (width >= 40rem) {
+    display: flex;
+  }
+}
+.sm\:h-10 {
+  @media (width >= 40rem) {
+    height: calc(var(--spacing) * 10);
+  }
+}
+.sm\:h-11 {
+  @media (width >= 40rem) {
+    height: calc(var(--spacing) * 11);
+  }
+}
+.sm\:h-12 {
+  @media (width >= 40rem) {
+    height: calc(var(--spacing) * 12);
+  }
+}
+.sm\:h-16 {
+  @media (width >= 40rem) {
+    height: calc(var(--spacing) * 16);
+  }
+}
+.sm\:h-20 {
+  @media (width >= 40rem) {
+    height: calc(var(--spacing) * 20);
+  }
+}
+.sm\:h-44 {
+  @media (width >= 40rem) {
+    height: calc(var(--spacing) * 44);
+  }
+}
+.sm\:h-48 {
+  @media (width >= 40rem) {
+    height: calc(var(--spacing) * 48);
+  }
+}
+.sm\:w-10 {
+  @media (width >= 40rem) {
+    width: calc(var(--spacing) * 10);
+  }
+}
+.sm\:w-11 {
+  @media (width >= 40rem) {
+    width: calc(var(--spacing) * 11);
+  }
+}
+.sm\:w-12 {
+  @media (width >= 40rem) {
+    width: calc(var(--spacing) * 12);
+  }
+}
+.sm\:w-16 {
+  @media (width >= 40rem) {
+    width: calc(var(--spacing) * 16);
+  }
+}
+.sm\:w-auto {
+  @media (width >= 40rem) {
+    width: auto;
+  }
+}
+.sm\:grid-cols-2 {
+  @media (width >= 40rem) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.sm\:grid-cols-3 {
+  @media (width >= 40rem) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.sm\:flex-row {
+  @media (width >= 40rem) {
+    flex-direction: row;
+  }
+}
+.sm\:items-center {
+  @media (width >= 40rem) {
+    align-items: center;
+  }
+}
+.sm\:gap-3 {
+  @media (width >= 40rem) {
+    gap: calc(var(--spacing) * 3);
+  }
+}
+.sm\:gap-4 {
+  @media (width >= 40rem) {
+    gap: calc(var(--spacing) * 4);
+  }
+}
+.sm\:gap-6 {
+  @media (width >= 40rem) {
+    gap: calc(var(--spacing) * 6);
+  }
+}
+.sm\:p-4 {
+  @media (width >= 40rem) {
+    padding: calc(var(--spacing) * 4);
+  }
+}
+.sm\:p-6 {
+  @media (width >= 40rem) {
+    padding: calc(var(--spacing) * 6);
+  }
+}
+.sm\:p-8 {
+  @media (width >= 40rem) {
+    padding: calc(var(--spacing) * 8);
+  }
+}
+.sm\:p-10 {
+  @media (width >= 40rem) {
+    padding: calc(var(--spacing) * 10);
+  }
+}
+.sm\:px-3 {
+  @media (width >= 40rem) {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+}
+.sm\:px-5 {
+  @media (width >= 40rem) {
+    padding-inline: calc(var(--spacing) * 5);
+  }
+}
+.sm\:px-6 {
+  @media (width >= 40rem) {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+}
+.sm\:px-8 {
+  @media (width >= 40rem) {
+    padding-inline: calc(var(--spacing) * 8);
+  }
+}
+.sm\:py-0 {
+  @media (width >= 40rem) {
+    padding-block: calc(var(--spacing) * 0);
+  }
+}
+.sm\:py-2 {
+  @media (width >= 40rem) {
+    padding-block: calc(var(--spacing) * 2);
+  }
+}
+.sm\:py-4 {
+  @media (width >= 40rem) {
+    padding-block: calc(var(--spacing) * 4);
+  }
+}
+.sm\:py-6 {
+  @media (width >= 40rem) {
+    padding-block: calc(var(--spacing) * 6);
+  }
+}
+.sm\:py-8 {
+  @media (width >= 40rem) {
+    padding-block: calc(var(--spacing) * 8);
+  }
+}
+.sm\:py-12 {
+  @media (width >= 40rem) {
+    padding-block: calc(var(--spacing) * 12);
+  }
+}
+.sm\:pb-6 {
+  @media (width >= 40rem) {
+    padding-bottom: calc(var(--spacing) * 6);
+  }
+}
+.sm\:text-base {
+  @media (width >= 40rem) {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+}
+.sm\:text-lg {
+  @media (width >= 40rem) {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+}
+.sm\:text-sm {
+  @media (width >= 40rem) {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+}
+.sm\:text-xl {
+  @media (width >= 40rem) {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+}
+.sm\:text-xs {
+  @media (width >= 40rem) {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+}
+.md\:grid-cols-3 {
+  @media (width >= 48rem) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.md\:grid-cols-4 {
+  @media (width >= 48rem) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.lg\:col-span-1 {
+  @media (width >= 64rem) {
+    grid-column: span 1 / span 1;
+  }
+}
+.lg\:col-span-5 {
+  @media (width >= 64rem) {
+    grid-column: span 5 / span 5;
+  }
+}
+.lg\:col-span-6 {
+  @media (width >= 64rem) {
+    grid-column: span 6 / span 6;
+  }
+}
+.lg\:grid-cols-3 {
+  @media (width >= 64rem) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.lg\:grid-cols-4 {
+  @media (width >= 64rem) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.lg\:grid-cols-6 {
+  @media (width >= 64rem) {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+.lg\:grid-cols-12 {
+  @media (width >= 64rem) {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+.lg\:flex-row {
+  @media (width >= 64rem) {
+    flex-direction: row;
+  }
+}
+.lg\:items-center {
+  @media (width >= 64rem) {
+    align-items: center;
+  }
+}
+.lg\:px-8 {
+  @media (width >= 64rem) {
+    padding-inline: calc(var(--spacing) * 8);
+  }
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-space-y-reverse: 0;
+      --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
+      --tw-duration: initial;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
+    }
+  }
+}
+
+  </style>
+
+  <!-- PDF-Lib & PDF.js for pure client-side PDF processing -->
+  <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js" integrity="sha512-z8IYLHO8bTgFqj+yrPyIJnzBDf7DDhWwiEsk4sY+Oe6J2M+WQequeGS7qioI5vT6rXgVRb4K1UVQC5ER7MKzKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" integrity="sha512-q+4liFwdPC/bNdhUpZx6aXDx/h77yEQtn4I1slHydcbZK34nLaR3cAeYSJshoxIOq3mjEf7xJE8YWIUHMn+oCQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" integrity="sha512-XMVd28F1oH/O71fzwBnV7HucLxVwtxf26XV8P4wPk26EDxuGZ91N8bsOttmnomcCD3CS5ZMRL50H0GgOHvegtg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <style>
+    body {
+      font-family: Tahoma, Arial, 'Segoe UI', sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+
+    .drag-active {
+      border-color: #6366f1 !important;
+      background-color: #eef2ff !important;
+      transform: scale(1.01);
+    }
+
+    /* Mobile touch target minimum sizing */
+    .touch-btn {
+      min-height: 44px;
+      touch-action: manipulation;
+    }
+
+    [data-sort-dragging="true"] { opacity: .45; transform: scale(.98); }
+    [data-sort-over="true"] { outline: 3px solid #6366f1; outline-offset: 2px; }
+    .preview-trigger { cursor: zoom-in; }
+    .drag-handle { touch-action: none; cursor: grab; }
+    .drag-handle:active { cursor: grabbing; }
+    [inert] { user-select: none; }
+    #loadingProgressTrack { margin-top: 1rem; }
+    #loadingProgressBar { height: 100%; }
+    #previewModal > div { max-height: 92vh; }
+    #previewModal .preview-stage { min-height: 0; }
+    #previewModalImage { max-height: 78vh; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-slate-50 antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- Toast Container -->
+  <div id="toastContainer" role="status" aria-live="polite" aria-atomic="false" class="fixed top-5 left-5 z-50 flex flex-col gap-2 max-w-sm w-full pointer-events-none"></div>
+
+  <!-- Custom Confirmation Modal -->
+  <div id="confirmModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalMessage" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-100 transform transition-all">
+      <div class="w-12 h-12 rounded-xl bg-red-50 text-red-500 flex items-center justify-center text-xl mb-4">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+      </div>
+      <h3 id="modalTitle" class="text-lg font-bold text-slate-800 mb-2">تأكيد الإجراء</h3>
+      <p id="modalMessage" class="text-slate-600 text-sm mb-6 leading-relaxed">هل أنت متأكد من رغبتك في إتمام هذا الإجراء؟</p>
+      <div class="flex gap-3 justify-end">
+        <button type="button" id="modalCancelBtn" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 font-medium text-sm transition touch-btn">إلغاء</button>
+        <button type="button" id="modalConfirmBtn" class="px-5 py-2.5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-medium text-sm shadow-md transition touch-btn">تأكيد الحذف</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Preview Lightbox -->
+  <div id="previewModal" role="dialog" aria-modal="true" aria-labelledby="previewModalTitle" class="fixed inset-0 z-50 bg-slate-900/75 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="relative bg-white rounded-2xl max-w-7xl w-full max-h-[92vh] p-3 sm:p-4 shadow-2xl border border-slate-100 flex flex-col gap-3">
+      <div class="flex items-center justify-between gap-3">
+        <h3 id="previewModalTitle" class="text-sm sm:text-base font-bold text-slate-800 truncate">معاينة الصورة</h3>
+        <button type="button" id="previewModalCloseBtn" class="touch-btn w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center" aria-label="إغلاق المعاينة">
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="preview-stage flex-1 min-h-0 rounded-xl bg-slate-100 flex items-center justify-center overflow-auto p-2">
+        <img id="previewModalImage" alt="" class="max-w-full max-h-[78vh] object-contain rounded-lg">
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Bar -->
+  <header class="bg-white/90 backdrop-blur-md sticky top-0 z-40 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-0 sm:h-20 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div class="flex items-center gap-3 w-full sm:w-auto">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-tr from-brand-600 to-indigo-500 flex items-center justify-center text-white shadow-lg shadow-brand-500/25 shrink-0">
+          <i class="fa-solid fa-file-pdf text-lg sm:text-xl"></i>
+        </div>
+        <div>
+          <h1 class="text-lg sm:text-xl font-extrabold text-slate-800 tracking-tight">ستوديو مستندات PDF</h1>
+          <p class="text-[11px] sm:text-xs text-slate-500 font-medium">تحويل الصور بمقاس A4 وتقسيم ملفات PDF باحترافية</p>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs (Fully Responsive on mobile & tablets) -->
+      <nav role="tablist" aria-label="أدوات المستندات" class="grid grid-cols-2 sm:flex bg-slate-100 p-1.5 rounded-2xl border border-slate-200/80 w-full sm:w-auto gap-1">
+        <button id="tabImgToPdf" type="button" role="tab" aria-selected="true" aria-controls="sectionImgToPdf" class="touch-btn flex items-center justify-center gap-2 px-3 sm:px-5 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-200 bg-white text-brand-700 shadow-sm">
+          <i class="fa-solid fa-images"></i>
+          <span>تحويل صور إلى A4</span>
+        </button>
+        <button id="tabPdfSplit" type="button" role="tab" aria-selected="false" aria-controls="sectionPdfSplit" class="touch-btn flex items-center justify-center gap-2 px-3 sm:px-5 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-200 text-slate-600 hover:text-slate-900">
+          <i class="fa-solid fa-scissors"></i>
+          <span>تقسيم ملف PDF</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+    
+    <!-- SECTION 1: Images to PDF A4 -->
+    <section id="sectionImgToPdf" role="tabpanel" aria-labelledby="tabImgToPdf" tabindex="0" class="space-y-6">
+      
+      <!-- Top Actions & Options Card -->
+      <div class="bg-white rounded-3xl p-4 sm:p-6 shadow-sm border border-slate-200/90 flex flex-col gap-6">
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- Page Orientation -->
+          <div class="flex flex-col gap-1.5">
+            <label for="a4Orientation" class="text-xs font-bold text-slate-600 flex items-center gap-1.5">
+              <i class="fa-solid fa-arrows-split-up-and-left text-brand-500"></i>
+              اتجاه صفحة A4:
+            </label>
+            <select id="a4Orientation" class="bg-slate-50 border border-slate-200 text-slate-800 text-sm rounded-xl p-2.5 focus:ring-2 focus:ring-brand-500 outline-none font-medium touch-btn">
+              <option value="auto">تلقائي (حسب كل صورة)</option>
+              <option value="portrait" selected>عمودي (Portrait)</option>
+              <option value="landscape">أفقي (Landscape)</option>
+            </select>
+          </div>
+
+          <!-- Page Margins -->
+          <div class="flex flex-col gap-1.5">
+            <label for="a4Margin" class="text-xs font-bold text-slate-600 flex items-center gap-1.5">
+              <i class="fa-solid fa-border-all text-brand-500"></i>
+              الهوامش:
+            </label>
+            <select id="a4Margin" class="bg-slate-50 border border-slate-200 text-slate-800 text-sm rounded-xl p-2.5 focus:ring-2 focus:ring-brand-500 outline-none font-medium touch-btn">
+              <option value="none">بدون هوامش (ملء الورقة)</option>
+              <option value="small" selected>هوامش صغيرة (5 ملم)</option>
+              <option value="medium">هوامش قياسية (15 ملم)</option>
+            </select>
+          </div>
+
+          <!-- Fit Style -->
+          <div class="flex flex-col gap-1.5 sm:col-span-2 lg:col-span-1">
+            <label for="a4Fit" class="text-xs font-bold text-slate-600 flex items-center gap-1.5">
+              <i class="fa-solid fa-expand text-brand-500"></i>
+              تناسب الصورة:
+            </label>
+            <select id="a4Fit" class="bg-slate-50 border border-slate-200 text-slate-800 text-sm rounded-xl p-2.5 focus:ring-2 focus:ring-brand-500 outline-none font-medium touch-btn">
+              <option value="fit" selected>احتواء كامل مع الحفاظ على النسبة</option>
+              <option value="fill">تغطية مع قص (يحافظ على نسبة الأبعاد)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Separate Convert & Download Actions Panel -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pt-4 border-t border-slate-100">
+          <div class="flex items-center gap-2">
+            <button type="button" id="clearAllImagesBtn" class="hidden touch-btn px-4 py-2.5 rounded-2xl border border-red-200 text-red-600 hover:bg-red-50 text-xs sm:text-sm font-bold transition flex items-center justify-center gap-2">
+              <i class="fa-regular fa-trash-can"></i>
+              <span>تفريغ القائمة</span>
+            </button>
+            <span id="imgConversionBadge" class="hidden text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-2 rounded-xl flex items-center gap-1.5">
+              <i class="fa-solid fa-check-double text-emerald-600"></i>
+              <span id="imgConversionBadgeText">جاهز للتحميل</span>
+            </span>
+          </div>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 w-full sm:w-auto">
+            <!-- Distinct Convert Button -->
+            <button type="button" id="convertImagesBtn" disabled class="touch-btn px-5 py-3 rounded-2xl bg-brand-600 hover:bg-brand-700 active:scale-95 text-white font-bold text-xs sm:text-sm shadow-md shadow-brand-500/20 transition disabled:opacity-50 disabled:pointer-events-none flex items-center justify-center gap-2">
+              <i class="fa-solid fa-arrows-rotate text-base"></i>
+              <span>1. تحويل الصور إلى PDF</span>
+            </button>
+
+            <!-- Distinct Download Button -->
+            <button type="button" id="downloadImagesBtn" disabled class="touch-btn px-5 py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold text-xs sm:text-sm shadow-md shadow-emerald-500/20 transition disabled:opacity-40 disabled:pointer-events-none flex items-center justify-center gap-2">
+              <i class="fa-solid fa-cloud-arrow-down text-base"></i>
+              <span>2. حفظ وتحميل المستند</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drag & Drop Upload Zone -->
+      <div id="dropZoneImages" aria-label="منطقة سحب وإفلات الصور" class="border-2 border-dashed border-slate-300 hover:border-brand-600 bg-white rounded-3xl p-8 sm:p-10 text-center cursor-pointer transition-all relative group shadow-sm">
+        <input type="file" id="imageInput" multiple aria-label="اختيار صور" accept="image/jpeg,image/png,image/webp" class="hidden">
+        <div class="max-w-md mx-auto flex flex-col items-center">
+          <div class="w-20 h-20 rounded-3xl bg-brand-50 text-brand-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-all"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+          <h3 class="text-xl font-bold text-slate-800 mb-1">اسحب الصور هنا أو انقر للاختيار</h3>
+          <p class="text-slate-500 text-sm mb-4">JPG, PNG, WEBP • حتى 100 صورة • تتم معالجة الملفات محلياً داخل المتصفح</p>
+          <button type="button" id="chooseImagesBtn" class="touch-btn px-6 py-3 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-xl shadow-md transition flex items-center gap-2">
+            <i class="fa-solid fa-folder-open"></i> اختر الصور من الجهاز
+          </button>
+        </div>
+      </div>
+
+      <!-- Image Grid Header & Counter -->
+      <div id="imagesGridHeader" class="hidden flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+        <div class="flex items-center gap-2">
+          <span class="text-sm sm:text-base font-bold text-slate-800">الصور المختارة للدمج</span>
+          <span id="imageCounterBadge" aria-live="polite" aria-atomic="true" class="bg-brand-100 text-brand-700 text-xs font-bold px-2.5 py-0.5 rounded-full">0 صورة</span>
+        </div>
+        <div class="text-xs text-slate-500 flex items-center gap-1.5">
+          <i class="fa-solid fa-arrows-up-down-left-right text-slate-400"></i>
+          <span>اسحب البطاقات لإعادة الترتيب، أو استخدم الأسهم وزر التدوير</span>
+        </div>
+      </div>
+
+      <!-- Images Grid Container -->
+      <div id="imagesContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <!-- Dynamically injected image cards -->
+      </div>
+    </section>
+
+    <!-- SECTION 2: PDF Splitter -->
+    <section id="sectionPdfSplit" role="tabpanel" aria-labelledby="tabPdfSplit" tabindex="0" class="space-y-6 hidden">
+      
+      <!-- Upload PDF Card -->
+      <div id="dropZonePdf" aria-label="منطقة سحب وإفلات ملف PDF" class="border-2 border-dashed border-slate-300 hover:border-brand-600 bg-white rounded-3xl p-8 sm:p-10 text-center cursor-pointer transition-all relative group shadow-sm">
+        <input type="file" id="pdfFileInput" aria-label="اختيار ملف PDF" accept="application/pdf" class="hidden">
+        <div class="max-w-md mx-auto flex flex-col items-center">
+          <div class="w-20 h-20 rounded-3xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-all"><i class="fa-solid fa-file-pdf"></i></div>
+          <h3 class="text-xl font-bold text-slate-800 mb-1">اسحب ملف PDF هنا أو انقر للاختيار</h3>
+          <p class="text-slate-500 text-sm mb-4">معاينة مرئية • اختيار دقيق • تحويل إلى صور</p>
+          <button type="button" id="choosePdfBtn" class="touch-btn px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl shadow-md transition flex items-center gap-2">
+            <i class="fa-solid fa-folder-open"></i> اختر ملف PDF
+          </button>
+        </div>
+      </div>
+
+      <!-- PDF Meta & Split Configuration (Hidden until file selected) -->
+      <div id="pdfControlsCard" class="hidden bg-white rounded-3xl p-4 sm:p-6 shadow-sm border border-slate-200/90 space-y-6">
+        
+        <!-- File Info Bar -->
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-4 sm:pb-6 border-b border-slate-100 gap-3">
+          <div class="flex items-center gap-3 sm:gap-4 overflow-hidden">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center text-lg sm:text-xl shrink-0">
+              <i class="fa-solid fa-file-pdf"></i>
+            </div>
+            <div class="min-w-0">
+              <h4 id="pdfFileName" class="text-sm sm:text-base font-extrabold text-slate-800 truncate">document.pdf</h4>
+              <p class="text-[11px] sm:text-xs text-slate-500 font-medium mt-0.5">
+                إجمالي الصفحات: <span id="pdfTotalPages" class="font-bold text-brand-600">0</span> صفحة
+                • الحجم: <span id="pdfFileSize">0 MB</span>
+              </p>
+            </div>
+          </div>
+          
+          <button id="resetPdfBtn" type="button" class="touch-btn text-xs font-bold text-slate-500 hover:text-red-600 px-3 py-1.5 rounded-xl border border-slate-200 hover:border-red-200 transition shrink-0">
+            <i class="fa-solid fa-arrow-rotate-right ml-1"></i> تغيير الملف
+          </button>
+        </div>
+
+        <!-- Range Selection Form -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-end">
+          
+          <!-- Range Input -->
+          <div class="lg:col-span-6 flex flex-col gap-1.5">
+            <label for="pageRangeInput" class="text-xs font-bold text-slate-700 flex items-center justify-between">
+              <span class="flex items-center gap-1.5">
+                <i class="fa-solid fa-arrow-down-1-9 text-brand-600"></i>
+                نطاق الصفحات المطلوب استخراجها:
+              </span>
+              <span class="text-[11px] text-slate-400 font-normal">يدعم الأرقام العربية والإنجليزية (مثال: 1-3, 5)</span>
+            </label>
+            <div class="flex gap-2 items-center">
+              <input type="text" id="pageRangeInput" placeholder="1-5" dir="ltr" style="text-align:left;direction:ltr;unicode-bidi:plaintext;" class="flex-1 bg-white border-2 border-slate-300 focus:border-brand-600 text-slate-900 text-base sm:text-lg rounded-xl p-3.5 sm:p-4 outline-none font-bold tracking-wider shadow-sm">
+              <button id="applyRangeBtn" type="button" class="shrink-0 px-6 sm:px-8 py-3.5 sm:py-4 bg-brand-600 hover:bg-brand-700 active:bg-brand-800 text-white text-sm sm:text-base font-bold rounded-xl shadow-md transition-all active:scale-95 touch-btn flex items-center gap-2">
+                <i class="fa-solid fa-check"></i> تطبيق
+              </button>
+            </div>
+            <p id="rangeDebug" aria-live="polite" class="text-[11px] text-slate-600 mt-2 font-mono min-h-[18px] px-1 bg-slate-50 rounded-lg py-1"></p>
+          </div>
+
+          <!-- Quick Selector Buttons - تصميم متناسق بدون تداخل -->
+          <div class="lg:col-span-5 grid grid-cols-2 gap-2">
+            <button id="selectAllBtn" type="button" class="touch-btn w-full px-3 py-2.5 bg-white hover:bg-brand-50 text-slate-700 hover:text-brand-700 text-xs font-bold rounded-xl transition border-2 border-slate-200 hover:border-brand-300 shadow-sm">تحديد الكل</button>
+            <button id="clearSelectionBtn" type="button" class="touch-btn w-full px-3 py-2.5 bg-white hover:bg-rose-50 text-slate-700 hover:text-rose-700 text-xs font-bold rounded-xl transition border-2 border-slate-200 hover:border-rose-300 shadow-sm">إلغاء التحديد</button>
+            <button id="selectOddBtn" type="button" class="touch-btn w-full px-3 py-2.5 bg-white hover:bg-brand-50 text-slate-700 hover:text-brand-700 text-xs font-bold rounded-xl transition border-2 border-slate-200 hover:border-brand-300 shadow-sm">الصفحات الفردية</button>
+            <button id="selectEvenBtn" type="button" class="touch-btn w-full px-3 py-2.5 bg-white hover:bg-brand-50 text-slate-700 hover:text-brand-700 text-xs font-bold rounded-xl transition border-2 border-slate-200 hover:border-brand-300 shadow-sm">الصفحات الزوجية</button>
+            <span id="selectedCountBadge" aria-live="polite" class="mr-auto text-[11px] sm:text-xs font-bold text-brand-700 bg-brand-50 border border-brand-200 px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-xl">
+              تم تحديد 0 صفحة
+            </span>
+          </div>
+        </div>
+
+        <!-- Split Output Options & Separate Convert / Download Actions -->
+        <div class="pt-4 border-t border-slate-100 flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
+          <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
+            <label for="splitModeSelect" class="text-xs font-bold text-slate-600 shrink-0">طريقة الحفظ والتصدير:</label>
+            <select id="splitModeSelect" class="bg-slate-50 border border-slate-200 text-slate-800 text-xs sm:text-sm rounded-xl p-2.5 font-medium outline-none touch-btn">
+              <option value="merged">دمج الصفحات المحددة في ملف PDF واحد جديد</option>
+              <option value="individual">حفظ كل صفحة محددة كملف منفصل</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
+            <span id="splitStatusBadge" class="hidden text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-2 rounded-xl flex items-center justify-center gap-1.5">
+              <i class="fa-solid fa-circle-check text-emerald-600"></i>
+              <span id="splitStatusText" aria-live="polite" aria-atomic="true">جاهز للتنزيل</span>
+            </span>
+
+            <!-- Distinct Convert / Split Process Button -->
+            <button type="button" id="convertPdfSplitBtn" disabled class="touch-btn px-5 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-700 active:scale-95 text-white font-bold text-xs sm:text-sm shadow-md shadow-indigo-500/20 transition disabled:opacity-50 disabled:pointer-events-none flex items-center justify-center gap-2">
+              <i class="fa-solid fa-gears text-base"></i>
+              <span>1. معالجة وتقسيم الصفحات</span>
+            </button>
+
+            <!-- Distinct Download Split Button -->
+            <button type="button" id="downloadPdfSplitBtn" disabled class="touch-btn px-5 py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold text-xs sm:text-sm shadow-md shadow-emerald-500/20 transition disabled:opacity-40 disabled:pointer-events-none flex items-center justify-center gap-2">
+              <i class="fa-solid fa-cloud-arrow-down text-base"></i>
+              <span id="downloadPdfSplitBtnText">2. تحميل الملفات الناتجة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Generated Split Files List for Individual Page Downloads -->
+        <div id="splitFilesListContainer" class="hidden pt-4 border-t border-slate-100 flex flex-col gap-3">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <span class="text-xs font-bold text-slate-700 flex items-center gap-1.5">
+              <i class="fa-solid fa-folder-open text-brand-600"></i>
+              الملفات الناتجة المنفصلة (يمكنك تحميل كل صفحة مفردة أو تحميل الكل كملف ZIP):
+            </span>
+            <button id="downloadSplitZipInlineBtn" type="button" class="text-xs font-bold text-brand-600 hover:text-brand-800 flex items-center gap-1">
+              <i class="fa-solid fa-file-zipper"></i>
+              <span>تحميل الكل كملف ZIP مضغوط</span>
+            </button>
+          </div>
+          <div id="splitFilesList" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 max-h-48 overflow-y-auto p-1 bg-slate-50 rounded-2xl border border-slate-100">
+            <!-- Dynamically populated page download chips -->
+          </div>
+        </div>
+      
+        <!-- ===== قسم جديد: تحويل PDF إلى صور - V8 ===== -->
+        <div id="imageExportSection" class="pt-6 border-t-2 border-dashed border-slate-200 space-y-4">
+          <div class="flex items-center justify-between">
+            <h3 class="text-sm font-bold text-slate-800 flex items-center gap-2"><i class="fa-solid fa-images text-emerald-600"></i>تحويل الصفحات المحددة إلى صور</h3>
+            <span class="text-[10px] bg-emerald-50 text-emerald-700 border border-emerald-200 px-2 py-1 rounded-full font-bold">جديد</span>
+          </div>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 bg-slate-50 p-3 rounded-2xl border border-slate-200">
+            <div class="flex flex-col gap-1.5">
+              <label for="imageFormatSelect" class="text-[11px] font-bold text-slate-600">صيغة الصورة:</label>
+              <select id="imageFormatSelect" class="bg-white border border-slate-300 text-slate-800 text-xs rounded-xl p-2.5 font-bold outline-none focus:border-emerald-500">
+                <option value="png">PNG - جودة عالية</option>
+                <option value="jpeg" selected>JPEG - حجم صغير</option>
+                <option value="webp">WEBP - حديث</option>
+              </select>
+            </div>
+            <div class="flex flex-col gap-1.5">
+              <label for="imageQualitySelect" class="text-[11px] font-bold text-slate-600">دقة الصورة:</label>
+              <select id="imageQualitySelect" class="bg-white border border-slate-300 text-slate-800 text-xs rounded-xl p-2.5 font-bold outline-none focus:border-emerald-500">
+                <option value="1">عادية 1x</option>
+                <option value="1.5">متوسطة 1.5x</option>
+                <option value="2" selected>عالية 2x - موصى به</option>
+                <option value="3">فائقة 3x - للطباعة</option>
+              </select>
+            </div>
+            <div class="flex flex-col gap-1.5">
+              <label for="imageNamingSelect" class="text-[11px] font-bold text-slate-600">طريقة التسمية:</label>
+              <select id="imageNamingSelect" class="bg-white border border-slate-300 text-slate-800 text-xs rounded-xl p-2.5 font-bold outline-none focus:border-emerald-500">
+                <option value="original_pagenumber" selected>اسم_الملف_صفحة_5</option>
+                <option value="padded">اسم_الملف_005</option>
+                <option value="numberonly">5 فقط</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-2.5">
+            <button type="button" id="convertToImagesBtn" disabled class="flex-1 px-5 py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-md transition disabled:opacity-50 disabled:pointer-events-none flex items-center justify-center gap-2">
+              <i class="fa-solid fa-wand-magic-sparkles"></i><span>تحويل إلى صور</span>
+            </button>
+            <button type="button" id="downloadImagesZipBtn" disabled class="flex-1 px-5 py-3 rounded-2xl bg-slate-800 hover:bg-slate-900 text-white font-bold text-sm shadow-md transition disabled:opacity-40 disabled:pointer-events-none flex items-center justify-center gap-2">
+              <i class="fa-solid fa-file-zipper"></i><span id="downloadImagesZipText">تحميل الصور ZIP</span>
+            </button>
+          </div>
+
+          <div id="imagesExportProgress" role="status" aria-live="polite" class="hidden bg-white rounded-2xl border border-slate-200 p-3 flex items-center gap-3">
+            <div class="w-8 h-8 border-4 border-emerald-200 border-t-emerald-600 rounded-full animate-spin"></div>
+            <div class="flex-1"><p id="imagesProgressText" class="text-xs font-bold text-slate-800">جارٍ التحويل...</p><div class="w-full bg-slate-100 rounded-full h-1.5 mt-1"><div id="imagesProgressBar" class="bg-emerald-600 h-1.5 rounded-full transition-all" style="width:0%"></div></div></div>
+          </div>
+
+          <div id="imagesExportListContainer" class="hidden space-y-3">
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-bold text-slate-700"><i class="fa-solid fa-photo-film text-emerald-600 ml-1"></i>الصور المحولة (<span id="imagesExportCount" aria-live="polite" aria-atomic="true">0</span>)</span>
+              <div class="flex gap-2">
+                <button type="button" id="downloadImagesZipInlineBtn" class="text-xs font-bold text-emerald-600">ZIP</button>
+                <button type="button" id="downloadImagesIndividualBtn" class="text-xs font-bold text-slate-500">تحميل فردي</button>
+              </div>
+            </div>
+            <div id="imagesExportList" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 max-h-[400px] overflow-y-auto p-2 bg-slate-50 rounded-2xl border"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Visual Pages Grid with Loading Indicator -->
+      <div id="pdfPagesGalleryContainer" class="hidden space-y-4">
+        <div class="flex items-center justify-between">
+          <h3 class="text-sm sm:text-base font-bold text-slate-800 flex items-center gap-2">
+            <i class="fa-solid fa-table-cells-large text-brand-600"></i>
+            <span>معاينة الصفحات (انقر على أي صفحة لتحديدها أو إلغائها):</span>
+          </h3>
+        </div>
+
+        <div id="pdfPagesLoading" class="hidden py-8 sm:py-12 flex flex-col items-center justify-center bg-white rounded-3xl border border-slate-200">
+          <div class="w-8 h-8 sm:w-10 sm:h-10 border-4 border-brand-200 border-t-brand-600 rounded-full animate-spin mb-3"></div>
+          <p class="text-xs sm:text-sm font-bold text-slate-600">جارٍ إنشاء المعاينات المرئية للصفحات بدقة عالية...</p>
+        </div>
+
+        <div id="pdfPagesGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
+          <!-- Dynamically filled with canvas page cards -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Processing Spinner Overlay -->
+  <div id="loadingOverlay" role="status" aria-live="polite" aria-busy="true" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex flex-col items-center justify-center p-4">
+    <div class="bg-white rounded-3xl p-6 sm:p-8 max-w-sm w-full mx-auto shadow-2xl flex flex-col items-center text-center border border-slate-100">
+      <div class="w-14 h-14 sm:w-16 sm:h-16 border-4 border-brand-200 border-t-brand-600 rounded-full animate-spin mb-4"></div>
+      <h4 id="loadingTitle" class="text-base sm:text-lg font-bold text-slate-800 mb-1">جارٍ معالجة المستند</h4>
+      <p id="loadingDescription" class="text-xs text-slate-500">يرجى الانتظار، تتم العملية بدقة عالية داخل متصفحك...</p>
+      <div id="loadingProgressTrack" class="hidden w-full mt-4">
+        <div class="h-1.5 w-full rounded-full bg-slate-100 overflow-hidden" role="progressbar" aria-label="تقدم العملية" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div id="loadingProgressBar" class="h-full bg-brand-600 transition-all duration-200" style="width:0%"></div>
+        </div>
+        <div id="loadingProgressText" class="mt-2 text-[11px] font-bold text-slate-500" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-4 sm:py-6 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 text-center text-[11px] sm:text-xs text-slate-500 font-medium">
+      تتم معالجة محتوى الملفات محلياً داخل المتصفح • المكتبات الخارجية مثبتة بإصدارات محددة وتخضع للتحقق من السلامة
+    </div>
+  </footer>
+
+  <script>
+'use strict';
+
+(() => {
+  const $ = (id) => document.getElementById(id);
+  const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+  const LIMITS = Object.freeze({
+    maxImages: 100,
+    maxImageBytes: 40 * 1024 * 1024,
+    maxImagesTotalBytes: 500 * 1024 * 1024,
+    maxPdfBytes: 300 * 1024 * 1024,
+    maxPdfPages: 5000,
+    maxIndividualPdfPages: 500,
+    maxImageExportPages: 250,
+    maxCanvasDimension: 16384,
+    maxCanvasPixels: 80_000_000
+  });
+
+  const A4_WIDTH_PT = 595.28;
+  const A4_HEIGHT_PT = 841.89;
+  const MM_TO_PT = 72 / 25.4;
+  const MARGIN_SMALL_MM = 5;
+  const MARGIN_MEDIUM_MM = 15;
+  const DOWNLOAD_URL_REVOKE_MS = 30_000;
+  const PDF_WORKER = Object.freeze({
+    url: 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js',
+    integrity: 'sha512-BbrZ76UNZq5BhH7LL7pn9A4TKQpQeNCHOo65/akfelcIBbcVvYWOFQKPXIrykE3qZxYjmDX573oa4Ywsc7rpTw=='
+  });
+
+  const state = {
+    activeTab: 'img-to-pdf',
+    busy: false,
+    pdfWorkerUrl: null,
+    pdfWorkerReady: false,
+    pdfWorkerMode: 'none',
+    jobs: { imagesToPdf: 0, pdfSplit: 0, pdfToImages: 0 },
+    images: [],
+    convertedImagePdfBytes: null,
+    convertedImagePdfName: 'Converted_A4_Images.pdf',
+    pdf: {
+      file: null,
+      uint8Data: null,
+      totalPages: 0,
+      pdfDoc: null,
+      selectedPages: new Set(),
+      renderTaskId: 0,
+      thumbObserver: null
+    },
+    splitResult: null,
+    imageExport: {
+      files: [],
+      zipBlob: null
+    }
+  };
+
+  let modalCallback = null;
+  let modalPreviousFocus = null;
+  let previewPreviousFocus = null;
+  let draggedImageId = null;
+  let pointerSortSourceId = null;
+  let pointerSortTargetId = null;
+
+  function icon(className) {
+    const node = document.createElement('i');
+    node.className = className;
+    node.setAttribute('aria-hidden', 'true');
+    return node;
+  }
+
+  function formatBytes(bytes) {
+    if (!Number.isFinite(bytes) || bytes < 0) return '0 B';
+    if (bytes < 1024) return `${bytes} B`;
+    if (bytes < 1024 ** 2) return `${(bytes / 1024).toFixed(1)} KB`;
+    if (bytes < 1024 ** 3) return `${(bytes / 1024 ** 2).toFixed(2)} MB`;
+    return `${(bytes / 1024 ** 3).toFixed(2)} GB`;
+  }
+
+  /** Sanitize a user-controlled filename for safe local downloads. */
+  function safeBaseName(name, fallback = 'document') {
+    const withoutExt = String(name || fallback).replace(/\.[^/.]+$/, '');
+    const cleaned = withoutExt
+      .replace(/[<>:"/\\|?*\u0000-\u001F]/g, '_')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .replace(/[. ]+$/g, '')
+      .slice(0, 100);
+    return cleaned || fallback;
+  }
+
+  function createId(prefix = 'id') {
+    if (globalThis.crypto?.randomUUID) return `${prefix}_${crypto.randomUUID()}`;
+    return `${prefix}_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`;
+  }
+
+  function showToast(message, type = 'info') {
+    const container = $('toastContainer');
+    if (!container) return;
+
+    const config = {
+      success: ['fa-solid fa-circle-check text-emerald-500', 'border-emerald-200'],
+      error: ['fa-solid fa-circle-xmark text-rose-500', 'border-rose-200'],
+      warning: ['fa-solid fa-triangle-exclamation text-amber-500', 'border-amber-200'],
+      info: ['fa-solid fa-circle-info text-brand-500', 'border-brand-200']
+    }[type] || ['fa-solid fa-circle-info text-brand-500', 'border-brand-200'];
+
+    const toast = document.createElement('div');
+    toast.className = `pointer-events-auto flex items-center gap-3 p-3.5 sm:p-4 rounded-2xl shadow-xl border bg-white text-slate-800 ${config[1]} transition-all duration-300 transform translate-y-2 opacity-0 text-xs sm:text-sm font-bold`;
+    toast.appendChild(icon(`${config[0]} text-base sm:text-lg shrink-0`));
+    const text = document.createElement('div');
+    text.className = 'flex-1';
+    text.textContent = String(message ?? '');
+    toast.appendChild(text);
+    container.appendChild(toast);
+
+    requestAnimationFrame(() => toast.classList.remove('translate-y-2', 'opacity-0'));
+    setTimeout(() => {
+      toast.classList.add('opacity-0', '-translate-y-2');
+      setTimeout(() => toast.remove(), 300);
+    }, 4500);
+  }
+
+  function setAppBusyState(busy) {
+    for (const node of document.querySelectorAll('header, main, footer')) {
+      if ('inert' in node) node.inert = busy;
+      node.style.pointerEvents = busy ? 'none' : '';
+    }
+    for (const tab of [$('tabImgToPdf'), $('tabPdfSplit')]) {
+      if (tab) tab.setAttribute('aria-disabled', busy ? 'true' : 'false');
+    }
+  }
+
+  function setLoaderProgress(percent = null, text = '') {
+    const track = $('loadingProgressTrack');
+    const bar = $('loadingProgressBar');
+    const progressbar = track?.querySelector('[role="progressbar"]');
+    const label = $('loadingProgressText');
+    const visible = Number.isFinite(percent);
+    track?.classList.toggle('hidden', !visible);
+    if (!visible) return;
+    const safe = Math.max(0, Math.min(100, Math.round(percent)));
+    if (bar) bar.style.width = `${safe}%`;
+    if (progressbar) progressbar.setAttribute('aria-valuenow', String(safe));
+    if (label) label.textContent = text || `${safe}%`;
+  }
+
+  function toggleLoader(show, title = 'جارٍ معالجة المستند', desc = 'يرجى الانتظار لحظات...') {
+    const overlay = $('loadingOverlay');
+    if (!overlay) return;
+    $('loadingTitle').textContent = title;
+    $('loadingDescription').textContent = desc;
+    state.busy = Boolean(show);
+    setAppBusyState(state.busy);
+    overlay.classList.toggle('hidden', !show);
+    overlay.setAttribute('aria-hidden', show ? 'false' : 'true');
+    document.documentElement.style.overflow = show ? 'hidden' : '';
+    if (!show) setLoaderProgress(null);
+  }
+
+  async function withLoader(title, desc, work) {
+    if (state.busy) {
+      showToast('هناك عملية أخرى قيد التنفيذ حالياً.', 'warning');
+      return null;
+    }
+    toggleLoader(true, title, desc);
+    try {
+      return await work();
+    } finally {
+      toggleLoader(false);
+    }
+  }
+
+  function closeConfirmModal() {
+    const modal = $('confirmModal');
+    modal.classList.add('hidden');
+    modal.setAttribute('aria-hidden', 'true');
+    modalCallback = null;
+    if (modalPreviousFocus instanceof HTMLElement) modalPreviousFocus.focus();
+    modalPreviousFocus = null;
+  }
+
+  function openConfirmModal(title, message, onConfirm) {
+    modalPreviousFocus = document.activeElement;
+    $('modalTitle').textContent = title;
+    $('modalMessage').textContent = message;
+    modalCallback = typeof onConfirm === 'function' ? onConfirm : null;
+    const modal = $('confirmModal');
+    modal.classList.remove('hidden');
+    modal.setAttribute('aria-hidden', 'false');
+    requestAnimationFrame(() => $('modalCancelBtn').focus());
+  }
+
+  function handleModalKeydown(event) {
+    const modal = $('confirmModal');
+    if (modal.classList.contains('hidden')) return;
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      closeConfirmModal();
+      return;
+    }
+    if (event.key !== 'Tab') return;
+    const focusable = [...modal.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')]
+      .filter((el) => !el.hasAttribute('hidden'));
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  }
+
+  function switchTab(tab) {
+    if (state.busy) return;
+    state.activeTab = tab;
+    const isImages = tab === 'img-to-pdf';
+    const tabImg = $('tabImgToPdf');
+    const tabPdf = $('tabPdfSplit');
+    const secImg = $('sectionImgToPdf');
+    const secPdf = $('sectionPdfSplit');
+
+    tabImg.className = `touch-btn flex items-center justify-center gap-2 px-3 sm:px-5 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-200 ${isImages ? 'bg-white text-brand-700 shadow-sm' : 'text-slate-600 hover:text-slate-900'}`;
+    tabPdf.className = `touch-btn flex items-center justify-center gap-2 px-3 sm:px-5 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-200 ${!isImages ? 'bg-white text-brand-700 shadow-sm' : 'text-slate-600 hover:text-slate-900'}`;
+    tabImg.setAttribute('aria-selected', isImages ? 'true' : 'false');
+    tabPdf.setAttribute('aria-selected', isImages ? 'false' : 'true');
+    tabImg.tabIndex = isImages ? 0 : -1;
+    tabPdf.tabIndex = isImages ? -1 : 0;
+    secImg.classList.toggle('hidden', !isImages);
+    secPdf.classList.toggle('hidden', isImages);
+    secImg.setAttribute('aria-hidden', isImages ? 'false' : 'true');
+    secPdf.setAttribute('aria-hidden', isImages ? 'true' : 'false');
+  }
+
+  function openPreview(src, title = 'معاينة الصورة', alt = '') {
+    if (!src || state.busy) return;
+    previewPreviousFocus = document.activeElement;
+    $('previewModalTitle').textContent = title;
+    const image = $('previewModalImage');
+    image.src = src;
+    image.alt = alt || title;
+    const modal = $('previewModal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    modal.setAttribute('aria-hidden', 'false');
+    requestAnimationFrame(() => $('previewModalCloseBtn').focus());
+  }
+
+  function closePreview() {
+    const modal = $('previewModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    modal.setAttribute('aria-hidden', 'true');
+    const image = $('previewModalImage');
+    image.removeAttribute('src');
+    image.alt = '';
+    if (previewPreviousFocus instanceof HTMLElement) previewPreviousFocus.focus();
+    previewPreviousFocus = null;
+  }
+
+  function handlePreviewKeydown(event) {
+    const modal = $('previewModal');
+    if (modal.classList.contains('hidden')) return;
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      closePreview();
+      return;
+    }
+    if (event.key === 'Tab') {
+      event.preventDefault();
+      $('previewModalCloseBtn').focus();
+    }
+  }
+
+  function cleanupImageExport() {
+    for (const item of state.imageExport.files) {
+      if (item.previewUrl) URL.revokeObjectURL(item.previewUrl);
+    }
+    state.imageExport.files = [];
+    state.imageExport.zipBlob = null;
+  }
+
+  function invalidateImageExport() {
+    state.jobs.pdfToImages++;
+    cleanupImageExport();
+    const list = $('imagesExportList');
+    if (list) list.replaceChildren();
+    $('imagesExportListContainer')?.classList.add('hidden');
+    if ($('downloadImagesZipBtn')) $('downloadImagesZipBtn').disabled = true;
+    if ($('downloadImagesZipText')) $('downloadImagesZipText').textContent = 'تحميل الصور ZIP';
+    if ($('imagesExportCount')) $('imagesExportCount').textContent = '0';
+    if ($('imagesExportProgress')) $('imagesExportProgress').classList.add('hidden');
+    if ($('imagesProgressBar')) $('imagesProgressBar').style.width = '0%';
+  }
+
+  function invalidateImageConversion() {
+    state.jobs.imagesToPdf++;
+    state.convertedImagePdfBytes = null;
+    $('downloadImagesBtn').disabled = true;
+    $('imgConversionBadge').classList.add('hidden');
+  }
+
+  function invalidateSplitConversion() {
+    state.jobs.pdfSplit++;
+    state.splitResult = null;
+    $('downloadPdfSplitBtn').disabled = true;
+    $('downloadPdfSplitBtnText').textContent = '2. تحميل الملفات الناتجة';
+    $('splitStatusBadge').classList.add('hidden');
+    $('splitFilesListContainer').classList.add('hidden');
+    $('splitFilesList').replaceChildren();
+  }
+
+  function invalidatePdfDerivedResults() {
+    invalidateSplitConversion();
+    invalidateImageExport();
+  }
+
+  /** Normalize Arabic-Indic and Eastern Arabic-Indic digits to ASCII digits. */
+  function normalizeDigits(str) {
+    if (!str) return '';
+    const map = {
+      '٠': '0', '١': '1', '٢': '2', '٣': '3', '٤': '4', '٥': '5', '٦': '6', '٧': '7', '٨': '8', '٩': '9',
+      '۰': '0', '۱': '1', '۲': '2', '۳': '3', '۴': '4', '۵': '5', '۶': '6', '۷': '7', '۸': '8', '۹': '9'
+    };
+    return String(str).replace(/[٠-٩۰-۹]/g, (ch) => map[ch] || ch);
+  }
+
+  function cleanRangeInput(raw) {
+    if (!raw) return '';
+    return normalizeDigits(raw)
+      .replace(/[\u200e\u200f\u202a-\u202e\u2066-\u2069\u200b\u200c\u200d\uFEFF]/g, '')
+      .replace(/[\u2013\u2014\u2010\u2012\u2015]/g, '-')
+      .replace(/[،؛;]/g, ',')
+      .trim()
+      .toLowerCase();
+  }
+
+  /** Parse a strict page-range expression into a Set of one-based page numbers. */
+  function parsePageRange(raw, maxPages) {
+    const pages = new Set();
+    if (!Number.isInteger(maxPages) || maxPages <= 0) return { pages, error: 'لا يوجد مستند PDF محمّل.' };
+    let text = cleanRangeInput(raw);
+    if (!text || ['all', 'الكل', 'كل', '*'].includes(text)) {
+      for (let page = 1; page <= maxPages; page++) pages.add(page);
+      return { pages, error: null };
+    }
+
+    text = text
+      .replace(/\s*-\s*/g, '-')
+      .replace(/\s*,\s*/g, ',')
+      .replace(/\s+/g, ',');
+
+    if (text.startsWith(',') || text.endsWith(',') || text.includes(',,') || !/^[0-9,-]+$/.test(text)) {
+      return { pages, error: 'صيغة النطاق غير صحيحة. استخدم مثلاً: 1-5, 8, 10.' };
+    }
+
+    for (const token of text.split(',')) {
+      if (/^\d+$/.test(token)) {
+        const page = Number(token);
+        if (!Number.isSafeInteger(page) || page < 1 || page > maxPages) {
+          return { pages: new Set(), error: `رقم الصفحة ${token} خارج النطاق 1-${maxPages}.` };
+        }
+        pages.add(page);
+        continue;
+      }
+
+      const match = token.match(/^(\d+)-(\d+)$/);
+      if (!match) return { pages: new Set(), error: `الجزء "${token}" غير صالح.` };
+      const a = Number(match[1]);
+      const b = Number(match[2]);
+      if (!Number.isSafeInteger(a) || !Number.isSafeInteger(b) || a < 1 || b < 1 || a > maxPages || b > maxPages) {
+        return { pages: new Set(), error: `النطاق ${token} خارج حدود المستند 1-${maxPages}.` };
+      }
+      const start = Math.min(a, b);
+      const end = Math.max(a, b);
+      for (let page = start; page <= end; page++) pages.add(page);
+    }
+
+    return pages.size ? { pages, error: null } : { pages, error: 'لم يتم العثور على صفحات صالحة.' };
+  }
+
+  /** Convert page numbers to a compact canonical range string. */
+  function formatRangeString(pages) {
+    if (!pages.length) return '';
+    const sorted = [...pages].sort((a, b) => a - b);
+    const ranges = [];
+    let start = sorted[0];
+    let end = sorted[0];
+    for (let i = 1; i < sorted.length; i++) {
+      if (sorted[i] === end + 1) {
+        end = sorted[i];
+      } else {
+        ranges.push(start === end ? `${start}` : `${start}-${end}`);
+        start = end = sorted[i];
+      }
+    }
+    ranges.push(start === end ? `${start}` : `${start}-${end}`);
+    return ranges.join(', ');
+  }
+
+  function isSupportedImageFile(file) {
+    const ext = String(file?.name || '').toLowerCase().match(/\.([a-z0-9]+)$/)?.[1];
+    return ['image/jpeg', 'image/png', 'image/webp'].includes(file?.type) || ['jpg', 'jpeg', 'png', 'webp'].includes(ext || '');
+  }
+
+  async function sniffImageType(file) {
+    const bytes = new Uint8Array(await file.slice(0, 16).arrayBuffer());
+    if (bytes.length >= 3 && bytes[0] === 0xff && bytes[1] === 0xd8 && bytes[2] === 0xff) return 'jpeg';
+    if (bytes.length >= 8 && bytes[0] === 0x89 && bytes[1] === 0x50 && bytes[2] === 0x4e && bytes[3] === 0x47) return 'png';
+    if (bytes.length >= 12 && String.fromCharCode(...bytes.slice(0, 4)) === 'RIFF' && String.fromCharCode(...bytes.slice(8, 12)) === 'WEBP') return 'webp';
+    return null;
+  }
+
+  async function handleImageFiles(files) {
+    if (state.busy) {
+      showToast('انتظر اكتمال العملية الحالية قبل إضافة ملفات جديدة.', 'warning');
+      return;
+    }
+    const availableSlots = Math.max(0, LIMITS.maxImages - state.images.length);
+    if (!availableSlots) {
+      showToast(`الحد الأقصى هو ${LIMITS.maxImages} صورة.`, 'warning');
+      return;
+    }
+
+    const incoming = files.filter(isSupportedImageFile).slice(0, availableSlots);
+    if (files.length > incoming.length) {
+      showToast(`تم تجاهل الملفات غير المدعومة أو الزائدة عن حد ${LIMITS.maxImages} صورة.`, 'warning');
+    }
+
+    let currentTotalBytes = state.images.reduce((sum, item) => sum + item.file.size, 0);
+    let added = 0;
+    let rejected = 0;
+
+    for (const file of incoming) {
+      if (file.size <= 0 || file.size > LIMITS.maxImageBytes || currentTotalBytes + file.size > LIMITS.maxImagesTotalBytes) {
+        rejected++;
+        continue;
+      }
+      try {
+        const kind = await sniffImageType(file);
+        if (!kind) {
+          rejected++;
+          continue;
+        }
+        const url = URL.createObjectURL(file);
+        state.images.push({
+          id: createId('img'),
+          file,
+          kind,
+          url,
+          rotation: 0,
+          name: file.name || `image_${state.images.length + 1}.${kind}`,
+          size: formatBytes(file.size)
+        });
+        currentTotalBytes += file.size;
+        added++;
+      } catch (error) {
+        console.error('Image validation error:', error);
+        rejected++;
+      }
+    }
+
+    if (added) {
+      invalidateImageConversion();
+      renderImagesGrid();
+      showToast(`تمت إضافة ${added} صورة بنجاح.`, 'success');
+    }
+    if (rejected) showToast(`تم رفض ${rejected} ملف لعدم صلاحيته أو لتجاوزه حدود الحجم الآمنة.`, 'warning');
+  }
+
+  function renderImagesGrid() {
+    const container = $('imagesContainer');
+    const header = $('imagesGridHeader');
+    const badge = $('imageCounterBadge');
+    const convertBtn = $('convertImagesBtn');
+    const clearBtn = $('clearAllImagesBtn');
+    container.replaceChildren();
+
+    const total = state.images.length;
+    badge.textContent = `${total} ${total === 1 ? 'صورة' : 'صور'}`;
+    header.classList.toggle('hidden', total === 0);
+    clearBtn.classList.toggle('hidden', total === 0);
+    convertBtn.disabled = total === 0;
+    if (!total) {
+      invalidateImageConversion();
+      return;
+    }
+
+    const fragment = document.createDocumentFragment();
+    state.images.forEach((item, index) => {
+      const card = document.createElement('article');
+      card.className = 'group relative bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col';
+      card.draggable = true;
+      card.dataset.imageId = item.id;
+      card.addEventListener('dragstart', (event) => {
+        if (event.target.closest('button')) { event.preventDefault(); return; }
+        draggedImageId = item.id;
+        card.dataset.sortDragging = 'true';
+        event.dataTransfer?.setData('text/plain', item.id);
+        if (event.dataTransfer) event.dataTransfer.effectAllowed = 'move';
+      });
+      card.addEventListener('dragover', (event) => {
+        if (!draggedImageId || draggedImageId === item.id) return;
+        event.preventDefault();
+        card.dataset.sortOver = 'true';
+        if (event.dataTransfer) event.dataTransfer.dropEffect = 'move';
+      });
+      card.addEventListener('dragleave', () => delete card.dataset.sortOver);
+      card.addEventListener('drop', (event) => {
+        event.preventDefault();
+        delete card.dataset.sortOver;
+        reorderImageById(draggedImageId || event.dataTransfer?.getData('text/plain'), item.id);
+      });
+      card.addEventListener('dragend', () => {
+        draggedImageId = null;
+        document.querySelectorAll('[data-sort-dragging], [data-sort-over]').forEach((el) => { delete el.dataset.sortDragging; delete el.dataset.sortOver; });
+      });
+
+      const pageBadge = document.createElement('div');
+      pageBadge.className = 'absolute top-2.5 right-2.5 z-20 bg-slate-900/75 backdrop-blur-md text-white text-[11px] font-bold px-2 py-0.5 rounded-lg';
+      pageBadge.textContent = `صفحة A4 #${index + 1}`;
+      card.appendChild(pageBadge);
+
+      const preview = document.createElement('div');
+      preview.className = 'preview-trigger h-44 sm:h-48 w-full bg-slate-100 flex items-center justify-center p-2 overflow-hidden relative';
+      preview.tabIndex = 0;
+      preview.setAttribute('role', 'button');
+      preview.setAttribute('aria-label', `تكبير معاينة ${item.name}`);
+      preview.addEventListener('click', () => openPreview(item.url, item.name, item.name));
+      preview.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openPreview(item.url, item.name, item.name); }
+      });
+      const img = document.createElement('img');
+      img.src = item.url;
+      img.alt = item.name;
+      img.loading = 'lazy';
+      img.decoding = 'async';
+      img.className = 'max-h-full max-w-full object-contain rounded-lg';
+      img.style.transform = `rotate(${item.rotation}deg)`;
+      img.style.transition = 'transform 0.3s ease';
+      preview.appendChild(img);
+      card.appendChild(preview);
+
+      const body = document.createElement('div');
+      body.className = 'p-3 bg-white flex flex-col gap-2 flex-1 justify-between border-t border-slate-100';
+      const name = document.createElement('div');
+      name.className = 'truncate text-xs font-bold text-slate-700';
+      name.title = item.name;
+      name.textContent = item.name;
+      const size = document.createElement('div');
+      size.className = 'text-[11px] text-slate-400 font-medium';
+      size.textContent = item.size;
+      body.append(name, size);
+
+      const toolbar = document.createElement('div');
+      toolbar.className = 'flex items-center justify-between pt-2 border-t border-slate-100';
+      const reorder = document.createElement('div');
+      reorder.className = 'flex items-center gap-1.5';
+      const actions = document.createElement('div');
+      actions.className = 'flex items-center gap-1.5';
+
+      const makeButton = (label, classes, iconClass, handler, disabled = false) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = classes;
+        button.title = label;
+        button.setAttribute('aria-label', label);
+        button.disabled = disabled;
+        button.appendChild(icon(iconClass));
+        button.addEventListener('click', handler);
+        return button;
+      };
+
+      const dragHandle = document.createElement('button');
+      dragHandle.type = 'button';
+      dragHandle.className = 'drag-handle w-9 h-9 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs flex items-center justify-center transition';
+      dragHandle.title = 'اسحب لإعادة ترتيب الصورة';
+      dragHandle.setAttribute('aria-label', 'اسحب لإعادة ترتيب الصورة');
+      dragHandle.appendChild(icon('fa-solid fa-grip-vertical'));
+      dragHandle.addEventListener('pointerdown', (event) => beginPointerSort(event, item.id));
+
+      reorder.append(
+        dragHandle,
+        makeButton('تقديم الصورة', 'w-9 h-9 rounded-lg bg-slate-100 hover:bg-slate-200 active:bg-slate-300 disabled:opacity-30 disabled:pointer-events-none text-slate-700 text-xs flex items-center justify-center transition', 'fa-solid fa-arrow-right', () => moveImage(index, -1), index === 0),
+        makeButton('تأخير الصورة', 'w-9 h-9 rounded-lg bg-slate-100 hover:bg-slate-200 active:bg-slate-300 disabled:opacity-30 disabled:pointer-events-none text-slate-700 text-xs flex items-center justify-center transition', 'fa-solid fa-arrow-left', () => moveImage(index, 1), index === total - 1)
+      );
+      actions.append(
+        makeButton('تدوير 90 درجة', 'w-9 h-9 rounded-lg bg-brand-50 hover:bg-brand-100 active:bg-brand-200 text-brand-600 text-xs flex items-center justify-center transition', 'fa-solid fa-rotate-right', () => rotateImage(index)),
+        makeButton('حذف الصورة', 'w-9 h-9 rounded-lg bg-rose-50 hover:bg-rose-100 active:bg-rose-200 text-rose-600 text-xs flex items-center justify-center transition', 'fa-solid fa-trash-can', () => removeImage(index))
+      );
+      toolbar.append(reorder, actions);
+      body.appendChild(toolbar);
+      card.appendChild(body);
+      fragment.appendChild(card);
+    });
+    container.appendChild(fragment);
+  }
+
+  function beginPointerSort(event, imageId) {
+    if (state.busy || event.button > 0) return;
+    pointerSortSourceId = imageId;
+    pointerSortTargetId = imageId;
+    event.currentTarget.setPointerCapture?.(event.pointerId);
+    const card = event.currentTarget.closest('[data-image-id]');
+    if (card) card.dataset.sortDragging = 'true';
+    event.preventDefault();
+  }
+
+  function updatePointerSort(event) {
+    if (!pointerSortSourceId) return;
+    const target = document.elementFromPoint(event.clientX, event.clientY)?.closest?.('[data-image-id]');
+    document.querySelectorAll('[data-sort-over]').forEach((el) => delete el.dataset.sortOver);
+    if (target?.dataset.imageId && target.dataset.imageId !== pointerSortSourceId) {
+      pointerSortTargetId = target.dataset.imageId;
+      target.dataset.sortOver = 'true';
+    }
+  }
+
+  function endPointerSort() {
+    if (!pointerSortSourceId) return;
+    const source = pointerSortSourceId;
+    const target = pointerSortTargetId;
+    pointerSortSourceId = null;
+    pointerSortTargetId = null;
+    document.querySelectorAll('[data-sort-dragging], [data-sort-over]').forEach((el) => { delete el.dataset.sortDragging; delete el.dataset.sortOver; });
+    if (target && target !== source) reorderImageById(source, target);
+  }
+
+  function reorderImageById(sourceId, targetId) {
+    if (!sourceId || !targetId || sourceId === targetId || state.busy) return;
+    const sourceIndex = state.images.findIndex((item) => item.id === sourceId);
+    const targetIndex = state.images.findIndex((item) => item.id === targetId);
+    if (sourceIndex < 0 || targetIndex < 0) return;
+    const [moved] = state.images.splice(sourceIndex, 1);
+    const adjustedTarget = sourceIndex < targetIndex ? targetIndex - 1 : targetIndex;
+    state.images.splice(adjustedTarget, 0, moved);
+    invalidateImageConversion();
+    renderImagesGrid();
+  }
+
+  function moveImage(index, direction) {
+    const target = index + direction;
+    if (target < 0 || target >= state.images.length) return;
+    [state.images[index], state.images[target]] = [state.images[target], state.images[index]];
+    invalidateImageConversion();
+    renderImagesGrid();
+  }
+
+  function rotateImage(index) {
+    if (!state.images[index]) return;
+    state.images[index].rotation = (state.images[index].rotation + 90) % 360;
+    invalidateImageConversion();
+    renderImagesGrid();
+  }
+
+  function removeImage(index) {
+    const item = state.images[index];
+    if (!item) return;
+    URL.revokeObjectURL(item.url);
+    state.images.splice(index, 1);
+    invalidateImageConversion();
+    renderImagesGrid();
+    showToast('تمت إزالة الصورة من القائمة.', 'info');
+  }
+
+  function confirmClearImages() {
+    openConfirmModal('تفريغ قائمة الصور', 'هل تريد حذف جميع الصور المحددة من القائمة؟', () => {
+      for (const item of state.images) URL.revokeObjectURL(item.url);
+      state.images = [];
+      invalidateImageConversion();
+      renderImagesGrid();
+      showToast('تم تفريغ قائمة الصور.', 'info');
+    });
+  }
+
+  function loadImageElement(file) {
+    return new Promise((resolve, reject) => {
+      const url = URL.createObjectURL(file);
+      const img = new Image();
+      img.onload = () => resolve({ img, url });
+      img.onerror = () => {
+        URL.revokeObjectURL(url);
+        reject(new Error(`تعذر قراءة الصورة: ${file.name || 'ملف صورة'}`));
+      };
+      img.src = url;
+    });
+  }
+
+  function fitCanvasSize(width, height) {
+    const scale = Math.min(
+      1,
+      LIMITS.maxCanvasDimension / width,
+      LIMITS.maxCanvasDimension / height,
+      Math.sqrt(LIMITS.maxCanvasPixels / (width * height))
+    );
+    return {
+      width: Math.max(1, Math.round(width * scale)),
+      height: Math.max(1, Math.round(height * scale))
+    };
+  }
+
+  function canvasToBlob(canvas, type, quality) {
+    return new Promise((resolve, reject) => {
+      canvas.toBlob((blob) => {
+        if (!blob) reject(new Error('تعذر ترميز الصورة في المتصفح.'));
+        else resolve(blob);
+      }, type, quality);
+    });
+  }
+
+  async function prepareImageForPdf(item) {
+    if (item.rotation === 0 && (item.kind === 'jpeg' || item.kind === 'png')) {
+      return { kind: item.kind, bytes: new Uint8Array(await item.file.arrayBuffer()) };
+    }
+
+    const { img, url } = await loadImageElement(item.file);
+    try {
+      const isQuarterTurn = item.rotation === 90 || item.rotation === 270;
+      const rawWidth = isQuarterTurn ? img.naturalHeight : img.naturalWidth;
+      const rawHeight = isQuarterTurn ? img.naturalWidth : img.naturalHeight;
+      if (!rawWidth || !rawHeight) throw new Error(`أبعاد الصورة غير صالحة: ${item.name}`);
+      const target = fitCanvasSize(rawWidth, rawHeight);
+      const canvas = document.createElement('canvas');
+      canvas.width = target.width;
+      canvas.height = target.height;
+      const ctx = canvas.getContext('2d', { alpha: item.kind === 'png' });
+      if (!ctx) throw new Error('تعذر إنشاء مساحة الرسم في المتصفح.');
+
+      const sourceScale = Math.min(target.width / rawWidth, target.height / rawHeight);
+      const drawW = img.naturalWidth * sourceScale;
+      const drawH = img.naturalHeight * sourceScale;
+      ctx.translate(canvas.width / 2, canvas.height / 2);
+      ctx.rotate((item.rotation * Math.PI) / 180);
+      if (item.kind !== 'png') {
+        ctx.save();
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.restore();
+      }
+      ctx.drawImage(img, -drawW / 2, -drawH / 2, drawW, drawH);
+
+      const outputKind = item.kind === 'png' ? 'png' : 'jpeg';
+      const blob = await canvasToBlob(canvas, outputKind === 'png' ? 'image/png' : 'image/jpeg', 0.95);
+      canvas.width = 1;
+      canvas.height = 1;
+      return { kind: outputKind, bytes: new Uint8Array(await blob.arrayBuffer()) };
+    } finally {
+      URL.revokeObjectURL(url);
+    }
+  }
+
+  /** Convert the current image queue to an A4 PDF without uploading user content. */
+  async function convertImagesToPdf() {
+    if (state.busy) return;
+    if (!state.images.length) {
+      showToast('أضف صورة واحدة على الأقل أولاً.', 'warning');
+      return;
+    }
+    if (!window.PDFLib?.PDFDocument) {
+      showToast('مكتبة إنشاء PDF لم تُحمّل. تحقق من اتصال الإنترنت ثم أعد فتح الصفحة.', 'error');
+      return;
+    }
+
+    const jobId = ++state.jobs.imagesToPdf;
+    const imageSnapshot = state.images.map((item) => ({ ...item }));
+    await withLoader('جارٍ تحويل الصور إلى صفحات A4', 'تتم المعالجة داخل المتصفح مع الحفاظ على ترتيب الصور.', async () => {
+      try {
+        const pdfDoc = await PDFLib.PDFDocument.create();
+        const orientation = $('a4Orientation').value;
+        const marginSetting = $('a4Margin').value;
+        const fit = $('a4Fit').value;
+        const marginPt = (marginSetting === 'small' ? MARGIN_SMALL_MM : marginSetting === 'medium' ? MARGIN_MEDIUM_MM : 0) * MM_TO_PT;
+
+        for (let i = 0; i < imageSnapshot.length; i++) {
+          if (jobId !== state.jobs.imagesToPdf) throw new DOMException('تم إلغاء العملية بسبب تغير المدخلات.', 'AbortError');
+          const status = `معالجة الصورة ${i + 1} من ${imageSnapshot.length}...`;
+          $('loadingDescription').textContent = status;
+          setLoaderProgress((i / imageSnapshot.length) * 100, status);
+          const prepared = await prepareImageForPdf(imageSnapshot[i]);
+          const embedded = prepared.kind === 'png'
+            ? await pdfDoc.embedPng(prepared.bytes)
+            : await pdfDoc.embedJpg(prepared.bytes);
+          const dims = embedded.scale(1);
+          const landscape = dims.width > dims.height;
+          let pageWidth = A4_WIDTH_PT;
+          let pageHeight = A4_HEIGHT_PT;
+          if (orientation === 'landscape' || (orientation === 'auto' && landscape)) {
+            pageWidth = A4_HEIGHT_PT;
+            pageHeight = A4_WIDTH_PT;
+          }
+
+          const page = pdfDoc.addPage([pageWidth, pageHeight]);
+          const availableWidth = pageWidth - marginPt * 2;
+          const availableHeight = pageHeight - marginPt * 2;
+          if (availableWidth <= 0 || availableHeight <= 0) throw new Error('إعداد الهوامش غير صالح.');
+
+          let drawWidth;
+          let drawHeight;
+          let x;
+          let y;
+          if (fit === 'fit') {
+            const scale = Math.min(availableWidth / dims.width, availableHeight / dims.height);
+            drawWidth = dims.width * scale;
+            drawHeight = dims.height * scale;
+            x = marginPt + (availableWidth - drawWidth) / 2;
+            y = marginPt + (availableHeight - drawHeight) / 2;
+          } else {
+            const scale = Math.max(availableWidth / dims.width, availableHeight / dims.height);
+            drawWidth = dims.width * scale;
+            drawHeight = dims.height * scale;
+            x = marginPt + (availableWidth - drawWidth) / 2;
+            y = marginPt + (availableHeight - drawHeight) / 2;
+          }
+          page.drawImage(embedded, { x, y, width: drawWidth, height: drawHeight });
+          if (fit !== 'fit' && marginPt > 0) {
+            const white = PDFLib.rgb(1, 1, 1);
+            page.drawRectangle({ x: 0, y: 0, width: pageWidth, height: marginPt, color: white });
+            page.drawRectangle({ x: 0, y: pageHeight - marginPt, width: pageWidth, height: marginPt, color: white });
+            page.drawRectangle({ x: 0, y: marginPt, width: marginPt, height: availableHeight, color: white });
+            page.drawRectangle({ x: pageWidth - marginPt, y: marginPt, width: marginPt, height: availableHeight, color: white });
+          }
+          setLoaderProgress(((i + 1) / imageSnapshot.length) * 100, `تمت معالجة ${i + 1} من ${imageSnapshot.length}`);
+        }
+
+        if (jobId !== state.jobs.imagesToPdf) throw new DOMException('تم إلغاء العملية بسبب تغير المدخلات.', 'AbortError');
+        const bytes = await pdfDoc.save({ useObjectStreams: true });
+        if (jobId !== state.jobs.imagesToPdf) throw new DOMException('تم إلغاء العملية بسبب تغير المدخلات.', 'AbortError');
+        state.convertedImagePdfBytes = bytes;
+        state.convertedImagePdfName = `A4_Converted_${new Date().toISOString().replace(/[:.]/g, '-')}.pdf`;
+        $('imgConversionBadgeText').textContent = `جاهز للتحميل (${formatBytes(bytes.byteLength)} • ${imageSnapshot.length} صفحة)`;
+        $('imgConversionBadge').classList.remove('hidden');
+        $('downloadImagesBtn').disabled = false;
+        showToast('تم إنشاء ملف PDF بنجاح.', 'success');
+      } catch (error) {
+        console.error('Image to PDF error:', error);
+        invalidateImageConversion();
+        if (error?.name !== 'AbortError') showToast(`تعذر تحويل الصور: ${error?.message || 'خطأ غير معروف'}`, 'error');
+      }
+    });
+  }
+
+  function downloadConvertedPdf() {
+    if (!state.convertedImagePdfBytes) {
+      showToast('نفّذ التحويل أولاً.', 'warning');
+      return;
+    }
+    downloadBlob(state.convertedImagePdfBytes, state.convertedImagePdfName, 'application/pdf');
+  }
+
+  async function isPdfFile(file) {
+    if (!file || file.size < 5) return false;
+    const header = new Uint8Array(await file.slice(0, Math.min(1024, file.size)).arrayBuffer());
+    const text = new TextDecoder('latin1').decode(header);
+    return text.includes('%PDF-');
+  }
+
+  async function releasePdfResources() {
+    state.pdf.renderTaskId++;
+    state.pdf.thumbObserver?.disconnect();
+    state.pdf.thumbObserver = null;
+    const doc = state.pdf.pdfDoc;
+    state.pdf.pdfDoc = null;
+    if (doc?.destroy) {
+      try { await doc.destroy(); } catch (error) { console.debug('PDF destroy:', error); }
+    }
+  }
+
+  /** Load and validate a PDF into the local PDF.js document state. */
+  async function loadPdfDocument(file) {
+    if (state.busy) {
+      showToast('انتظر اكتمال العملية الحالية قبل تحميل ملف آخر.', 'warning');
+      return;
+    }
+    if (!window.pdfjsLib || !state.pdfWorkerReady) {
+      showToast('مكتبة قراءة PDF لم تُحمّل. تحقق من اتصال الإنترنت ثم أعد فتح الصفحة.', 'error');
+      return;
+    }
+    if (!file || file.size > LIMITS.maxPdfBytes) {
+      showToast(`حجم ملف PDF يجب ألا يتجاوز ${formatBytes(LIMITS.maxPdfBytes)} لهذه النسخة المتصفحية.`, 'warning');
+      return;
+    }
+    if (!(await isPdfFile(file))) {
+      showToast('الملف المحدد لا يحمل توقيع PDF صالحاً.', 'error');
+      return;
+    }
+
+    await withLoader('جارٍ قراءة ملف PDF', 'يتم التحقق من الملف وتحضير الصفحات...', async () => {
+      await releasePdfResources();
+      invalidatePdfDerivedResults();
+      state.pdf.file = null;
+      state.pdf.uint8Data = null;
+      state.pdf.totalPages = 0;
+      state.pdf.selectedPages = new Set();
+
+      try {
+        const arrayBuffer = await file.arrayBuffer();
+        const immutableCopy = new Uint8Array(arrayBuffer.slice(0));
+        const loadingTask = pdfjsLib.getDocument({
+          data: new Uint8Array(arrayBuffer.slice(0)),
+          stopAtErrors: false,
+          isEvalSupported: false
+        });
+        const pdf = await loadingTask.promise;
+        if (pdf.numPages > LIMITS.maxPdfPages) {
+          await pdf.destroy();
+          throw new Error(`عدد الصفحات (${pdf.numPages}) يتجاوز الحد الآمن لهذه الواجهة (${LIMITS.maxPdfPages}).`);
+        }
+
+        state.pdf.file = file;
+        state.pdf.uint8Data = immutableCopy;
+        state.pdf.pdfDoc = pdf;
+        state.pdf.totalPages = pdf.numPages;
+        state.pdf.selectedPages = new Set(Array.from({ length: pdf.numPages }, (_, i) => i + 1));
+        $('pdfFileName').textContent = file.name || 'document.pdf';
+        $('pdfTotalPages').textContent = String(pdf.numPages);
+        $('pdfFileSize').textContent = formatBytes(file.size);
+        $('dropZonePdf').classList.add('hidden');
+        $('pdfControlsCard').classList.remove('hidden');
+        $('pdfPagesGalleryContainer').classList.remove('hidden');
+        updatePageSelectionDisplay(true);
+        renderPdfThumbnails();
+        showToast(`تم تحميل ملف PDF بنجاح (${pdf.numPages} صفحة).`, 'success');
+      } catch (error) {
+        console.error('PDF load error:', error);
+        const message = String(error?.message || '');
+        const isPassword = error?.name === 'PasswordException' || /password|encrypted/i.test(message);
+        showToast(isPassword ? 'ملفات PDF المشفرة أو المحمية بكلمة مرور غير مدعومة دون فك الحماية أولاً.' : `فشل تحميل ملف PDF: ${message || 'الملف تالف أو غير مدعوم.'}`, 'error');
+        $('dropZonePdf').classList.remove('hidden');
+        $('pdfControlsCard').classList.add('hidden');
+        $('pdfPagesGalleryContainer').classList.add('hidden');
+      }
+    });
+  }
+
+  async function resetPdfSplitter() {
+    if (state.busy) return;
+    await releasePdfResources();
+    invalidatePdfDerivedResults();
+    state.pdf.file = null;
+    state.pdf.uint8Data = null;
+    state.pdf.totalPages = 0;
+    state.pdf.selectedPages = new Set();
+    $('pdfFileInput').value = '';
+    $('dropZonePdf').classList.remove('hidden');
+    $('pdfControlsCard').classList.add('hidden');
+    $('pdfPagesGalleryContainer').classList.add('hidden');
+    $('pdfPagesGrid').replaceChildren();
+    $('pageRangeInput').value = '';
+    $('rangeDebug').textContent = '';
+  }
+
+  function pageCardClasses(selected) {
+    return `w-full cursor-pointer relative bg-white rounded-2xl border-2 transition-all p-2 flex flex-col items-center group focus:outline-none focus:ring-2 focus:ring-brand-500 ${selected ? 'border-brand-600 bg-brand-50/40 shadow-md ring-2 ring-brand-500/20' : 'border-slate-200 opacity-60 hover:opacity-100'}`;
+  }
+
+  function createPdfPageCard(pageNum) {
+    const selected = state.pdf.selectedPages.has(pageNum);
+    const card = document.createElement('button');
+    card.type = 'button';
+    card.id = `pdf-page-card-${pageNum}`;
+    card.dataset.page = String(pageNum);
+    card.className = pageCardClasses(selected);
+    card.setAttribute('aria-pressed', selected ? 'true' : 'false');
+    card.setAttribute('aria-label', `الصفحة ${pageNum}: ${selected ? 'محددة' : 'غير محددة'}`);
+    card.addEventListener('click', () => togglePageSelection(pageNum));
+
+    const header = document.createElement('div');
+    header.className = 'w-full flex items-center justify-between mb-1 px-1';
+    const number = document.createElement('span');
+    number.className = `page-number text-xs font-black ${selected ? 'text-brand-600' : 'text-slate-500'}`;
+    number.textContent = `#${pageNum}`;
+    const check = document.createElement('div');
+    check.className = `page-check w-5 h-5 rounded-md flex items-center justify-center text-xs transition ${selected ? 'bg-brand-600 text-white' : 'border border-slate-300 bg-white text-transparent'}`;
+    check.appendChild(icon('fa-solid fa-check'));
+    header.append(number, check);
+
+    const frame = document.createElement('div');
+    frame.className = 'w-full h-36 sm:h-44 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center relative';
+    const placeholder = document.createElement('div');
+    placeholder.className = 'thumb-placeholder text-[10px] text-slate-400 font-bold';
+    placeholder.textContent = 'معاينة';
+    const canvas = document.createElement('canvas');
+    canvas.id = `thumb-canvas-${pageNum}`;
+    canvas.className = 'max-w-full max-h-full object-contain hidden';
+    frame.append(placeholder, canvas);
+    card.append(header, frame);
+    return card;
+  }
+
+  async function renderThumbnail(pageNum, taskId) {
+    if (state.pdf.renderTaskId !== taskId || !state.pdf.pdfDoc) return;
+    const canvas = $(`thumb-canvas-${pageNum}`);
+    if (!canvas || canvas.dataset.rendered === '1') return;
+    canvas.dataset.rendered = 'pending';
+    try {
+      const page = await state.pdf.pdfDoc.getPage(pageNum);
+      if (state.pdf.renderTaskId !== taskId) return;
+      const viewport = page.getViewport({ scale: 0.35 });
+      const ctx = canvas.getContext('2d', { alpha: false });
+      canvas.width = Math.max(1, Math.ceil(viewport.width));
+      canvas.height = Math.max(1, Math.ceil(viewport.height));
+      await page.render({ canvasContext: ctx, viewport }).promise;
+      canvas.dataset.rendered = '1';
+      canvas.classList.remove('hidden');
+      canvas.parentElement?.querySelector('.thumb-placeholder')?.classList.add('hidden');
+      page.cleanup?.();
+    } catch (error) {
+      canvas.dataset.rendered = 'error';
+      const placeholder = canvas.parentElement?.querySelector('.thumb-placeholder');
+      if (placeholder) placeholder.textContent = 'تعذرت المعاينة';
+      console.warn(`Thumbnail ${pageNum}:`, error);
+    }
+  }
+
+  function renderPdfThumbnails() {
+    const taskId = ++state.pdf.renderTaskId;
+    const grid = $('pdfPagesGrid');
+    const loader = $('pdfPagesLoading');
+    grid.replaceChildren();
+    loader.classList.remove('hidden');
+    state.pdf.thumbObserver?.disconnect();
+
+    const fragment = document.createDocumentFragment();
+    for (let pageNum = 1; pageNum <= state.pdf.totalPages; pageNum++) fragment.appendChild(createPdfPageCard(pageNum));
+    grid.appendChild(fragment);
+    loader.classList.add('hidden');
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          const pageNum = Number(entry.target.dataset.page);
+          observer.unobserve(entry.target);
+          void renderThumbnail(pageNum, taskId);
+        }
+      }, { rootMargin: '500px 0px' });
+      state.pdf.thumbObserver = observer;
+      grid.querySelectorAll('[data-page]').forEach((card) => observer.observe(card));
+    } else {
+      state.pdf.thumbObserver = null;
+      (async () => {
+        for (let pageNum = 1; pageNum <= state.pdf.totalPages; pageNum++) {
+          if (state.pdf.renderTaskId !== taskId) break;
+          await renderThumbnail(pageNum, taskId);
+          if (pageNum % 10 === 0) await sleep(0);
+        }
+      })();
+    }
+  }
+
+  function updatePageCardVisual(pageNum) {
+    const card = $(`pdf-page-card-${pageNum}`);
+    if (!card) return;
+    const selected = state.pdf.selectedPages.has(pageNum);
+    card.className = pageCardClasses(selected);
+    card.setAttribute('aria-pressed', selected ? 'true' : 'false');
+    card.setAttribute('aria-label', `الصفحة ${pageNum}: ${selected ? 'محددة' : 'غير محددة'}`);
+    const number = card.querySelector('.page-number');
+    const check = card.querySelector('.page-check');
+    if (number) number.className = `page-number text-xs font-black ${selected ? 'text-brand-600' : 'text-slate-500'}`;
+    if (check) check.className = `page-check w-5 h-5 rounded-md flex items-center justify-center text-xs transition ${selected ? 'bg-brand-600 text-white' : 'border border-slate-300 bg-white text-transparent'}`;
+  }
+
+  function markSelectionChanged(updateInput = true) {
+    invalidatePdfDerivedResults();
+    updatePageSelectionDisplay(updateInput);
+  }
+
+  function togglePageSelection(pageNum) {
+    if (state.pdf.selectedPages.has(pageNum)) state.pdf.selectedPages.delete(pageNum);
+    else state.pdf.selectedPages.add(pageNum);
+    updatePageCardVisual(pageNum);
+    markSelectionChanged(true);
+  }
+
+  function updatePageSelectionDisplay(updateInputText = true) {
+    const count = state.pdf.selectedPages.size;
+    $('selectedCountBadge').textContent = `تم تحديد ${count} من أصل ${state.pdf.totalPages} صفحة`;
+    $('convertPdfSplitBtn').disabled = count === 0;
+    $('convertToImagesBtn').disabled = count === 0;
+    if (updateInputText) {
+      const formatted = formatRangeString([...state.pdf.selectedPages]);
+      $('pageRangeInput').value = formatted;
+      $('rangeDebug').textContent = formatted ? `المدى الحالي: ${formatted}` : '';
+    }
+  }
+
+  function handleRangeInputTyping(value) {
+    invalidatePdfDerivedResults();
+    const debug = $('rangeDebug');
+    if (!value.trim()) {
+      debug.textContent = '';
+      return;
+    }
+    const parsed = parsePageRange(value, state.pdf.totalPages);
+    if (parsed.error) {
+      debug.textContent = parsed.error;
+      debug.className = 'text-[11px] text-rose-600 mt-2 font-mono min-h-[18px] px-1 bg-rose-50 rounded-lg py-1';
+    } else {
+      const sample = [...parsed.pages].slice(0, 5).join(', ');
+      debug.textContent = `معاينة: ${parsed.pages.size} صفحة (${sample}${parsed.pages.size > 5 ? '…' : ''}) — اضغط تطبيق`;
+      debug.className = 'text-[11px] text-slate-600 mt-2 font-mono min-h-[18px] px-1 bg-slate-50 rounded-lg py-1';
+    }
+  }
+
+  function applyRangeInput() {
+    const parsed = parsePageRange($('pageRangeInput').value, state.pdf.totalPages);
+    if (parsed.error) {
+      showToast(parsed.error, 'warning');
+      return false;
+    }
+    state.pdf.selectedPages = parsed.pages;
+    for (let page = 1; page <= state.pdf.totalPages; page++) updatePageCardVisual(page);
+    invalidatePdfDerivedResults();
+    updatePageSelectionDisplay(false);
+    $('rangeDebug').className = 'text-[11px] text-slate-600 mt-2 font-mono min-h-[18px] px-1 bg-slate-50 rounded-lg py-1';
+    $('rangeDebug').textContent = `تم تطبيق: ${parsed.pages.size} صفحة — ${formatRangeString([...parsed.pages])}`;
+    showToast(`تم تحديد ${parsed.pages.size} صفحة.`, 'success');
+    return true;
+  }
+
+  function selectAllPdfPages(select) {
+    state.pdf.selectedPages = new Set();
+    if (select) for (let page = 1; page <= state.pdf.totalPages; page++) state.pdf.selectedPages.add(page);
+    for (let page = 1; page <= state.pdf.totalPages; page++) updatePageCardVisual(page);
+    markSelectionChanged(true);
+  }
+
+  function selectOddPages() {
+    state.pdf.selectedPages = new Set();
+    for (let page = 1; page <= state.pdf.totalPages; page += 2) state.pdf.selectedPages.add(page);
+    for (let page = 1; page <= state.pdf.totalPages; page++) updatePageCardVisual(page);
+    markSelectionChanged(true);
+    showToast('تم تحديد الصفحات الفردية.', 'info');
+  }
+
+  function selectEvenPages() {
+    state.pdf.selectedPages = new Set();
+    for (let page = 2; page <= state.pdf.totalPages; page += 2) state.pdf.selectedPages.add(page);
+    for (let page = 1; page <= state.pdf.totalPages; page++) updatePageCardVisual(page);
+    markSelectionChanged(true);
+    showToast('تم تحديد الصفحات الزوجية.', 'info');
+  }
+
+  function applyTypedRangeBeforeProcess() {
+    const value = $('pageRangeInput').value.trim();
+    if (!value) return true;
+    const parsed = parsePageRange(value, state.pdf.totalPages);
+    if (parsed.error) {
+      showToast(parsed.error, 'warning');
+      return false;
+    }
+    const formattedCurrent = formatRangeString([...state.pdf.selectedPages]);
+    const formattedParsed = formatRangeString([...parsed.pages]);
+    if (formattedParsed !== formattedCurrent) {
+      state.pdf.selectedPages = parsed.pages;
+      for (let page = 1; page <= state.pdf.totalPages; page++) updatePageCardVisual(page);
+      invalidatePdfDerivedResults();
+      updatePageSelectionDisplay(false);
+    }
+    return true;
+  }
+
+  /** Extract selected PDF pages either as one PDF or individual PDF files. */
+  async function processPdfSplit() {
+    if (state.busy) return;
+    if (!state.pdf.file || !state.pdf.uint8Data) {
+      showToast('حمّل ملف PDF أولاً.', 'warning');
+      return;
+    }
+    if (!window.PDFLib?.PDFDocument) {
+      showToast('مكتبة PDF المطلوبة لم تُحمّل.', 'error');
+      return;
+    }
+    if (!applyTypedRangeBeforeProcess()) return;
+    const selected = [...state.pdf.selectedPages].sort((a, b) => a - b);
+    if (!selected.length) {
+      showToast('حدد صفحة واحدة على الأقل.', 'warning');
+      return;
+    }
+    const mode = $('splitModeSelect').value;
+    if (mode === 'individual' && selected.length > LIMITS.maxIndividualPdfPages) {
+      showToast(`التصدير الفردي محدود إلى ${LIMITS.maxIndividualPdfPages} صفحة في العملية الواحدة لتجنب استهلاك الذاكرة المفرط.`, 'warning');
+      return;
+    }
+
+    invalidateSplitConversion();
+    const jobId = ++state.jobs.pdfSplit;
+    const pdfDataSnapshot = state.pdf.uint8Data.slice(0);
+    await withLoader('جارٍ معالجة الصفحات المحددة', 'يتم نسخ صفحات PDF دون تحويلها إلى صور.', async () => {
+      try {
+        const source = await PDFLib.PDFDocument.load(pdfDataSnapshot);
+        const base = safeBaseName(state.pdf.file.name);
+        const result = { mode, files: [], zipBlob: null };
+
+        if (mode === 'merged') {
+          const output = await PDFLib.PDFDocument.create();
+          const copied = await output.copyPages(source, selected.map((page) => page - 1));
+          copied.forEach((page) => output.addPage(page));
+          result.files.push({
+            bytes: await output.save({ useObjectStreams: true }),
+            filename: `${base}_extracted_${selected.length}pages.pdf`
+          });
+        } else {
+          for (let i = 0; i < selected.length; i++) {
+            if (jobId !== state.jobs.pdfSplit) throw new DOMException('تم إلغاء العملية بسبب تغير التحديد.', 'AbortError');
+            const status = `تجهيز الصفحة ${i + 1} من ${selected.length}...`;
+            $('loadingDescription').textContent = status;
+            setLoaderProgress((i / selected.length) * 100, status);
+            const pageNum = selected[i];
+            const output = await PDFLib.PDFDocument.create();
+            const [copied] = await output.copyPages(source, [pageNum - 1]);
+            output.addPage(copied);
+            result.files.push({ bytes: await output.save({ useObjectStreams: true }), filename: `${base}_page_${pageNum}.pdf` });
+            if (i % 20 === 19) await sleep(0);
+          }
+        }
+
+        if (jobId !== state.jobs.pdfSplit) throw new DOMException('تم إلغاء العملية بسبب تغير التحديد.', 'AbortError');
+        setLoaderProgress(100, 'اكتملت معالجة الصفحات.');
+        state.splitResult = result;
+        $('downloadPdfSplitBtn').disabled = false;
+        $('splitStatusBadge').classList.remove('hidden');
+        if (mode === 'merged') {
+          $('downloadPdfSplitBtnText').textContent = '2. تحميل ملف PDF المدمج';
+          $('splitStatusText').textContent = `تم تجهيز ${selected.length} صفحة في ملف واحد`;
+          $('splitFilesListContainer').classList.add('hidden');
+        } else {
+          $('downloadPdfSplitBtnText').textContent = window.JSZip ? '2. تحميل الكل كملف ZIP' : '2. تحميل الملفات المنفصلة';
+          $('splitStatusText').textContent = `تم تجهيز ${selected.length} ملف PDF منفصل`;
+          renderSplitFilesList();
+        }
+        showToast('تمت معالجة الصفحات بنجاح.', 'success');
+      } catch (error) {
+        console.error('PDF split error:', error);
+        invalidateSplitConversion();
+        if (error?.name !== 'AbortError') {
+          const message = String(error?.message || '');
+          showToast(/encrypted/i.test(message) ? 'لا يمكن تقسيم ملف PDF مشفر دون فك الحماية أولاً.' : `تعذر معالجة PDF: ${message || 'خطأ غير معروف'}`, 'error');
+        }
+      }
+    });
+  }
+
+  function renderSplitFilesList() {
+    const list = $('splitFilesList');
+    list.replaceChildren();
+    if (!state.splitResult?.files?.length) {
+      $('splitFilesListContainer').classList.add('hidden');
+      return;
+    }
+    const fragment = document.createDocumentFragment();
+    state.splitResult.files.forEach((file, index) => {
+      const chip = document.createElement('div');
+      chip.className = 'flex items-center justify-between gap-2 p-2 bg-white rounded-xl border border-slate-200 text-xs';
+      const label = document.createElement('span');
+      label.className = 'truncate font-semibold text-slate-700 max-w-[180px]';
+      label.title = file.filename;
+      label.append(icon('fa-solid fa-file-pdf text-red-500 ml-1'), document.createTextNode(` ${file.filename}`));
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'px-2.5 py-1.5 bg-brand-50 hover:bg-brand-100 text-brand-700 rounded-lg font-bold transition flex items-center gap-1';
+      button.setAttribute('aria-label', `تنزيل ${file.filename}`);
+      button.append(icon('fa-solid fa-arrow-down-to-bracket'), document.createTextNode(' تنزيل'));
+      button.addEventListener('click', () => downloadSingleSplitFile(index));
+      chip.append(label, button);
+      fragment.appendChild(chip);
+    });
+    list.appendChild(fragment);
+    $('splitFilesListContainer').classList.remove('hidden');
+  }
+
+  async function buildZip(files) {
+    if (!window.JSZip) return null;
+    const zip = new JSZip();
+    for (const file of files) zip.file(file.filename, file.blob ?? file.bytes);
+    return zip.generateAsync({ type: 'blob', compression: 'STORE', streamFiles: true });
+  }
+
+  async function downloadSplitResult() {
+    const result = state.splitResult;
+    if (!result?.files?.length) {
+      showToast('نفّذ معالجة الصفحات أولاً.', 'warning');
+      return;
+    }
+    if (result.mode === 'merged') {
+      downloadBlob(result.files[0].bytes, result.files[0].filename, 'application/pdf');
+      return;
+    }
+
+    if (window.JSZip) {
+      await withLoader('جارٍ تجهيز ملف ZIP', 'يتم جمع ملفات PDF الناتجة دون إعادة ضغط غير ضرورية.', async () => {
+        const zip = await buildZip(result.files);
+        if (!zip) return;
+        const filename = `${safeBaseName(state.pdf.file?.name)}_extracted_pages.zip`;
+        downloadBlob(zip, filename, 'application/zip');
+      });
+    } else {
+      await downloadAllSplitFilesIndividually();
+    }
+  }
+
+  function downloadSingleSplitFile(index) {
+    const file = state.splitResult?.files?.[index];
+    if (!file) return;
+    downloadBlob(file.bytes, file.filename, 'application/pdf');
+  }
+
+  async function downloadAllSplitFilesIndividually() {
+    const files = state.splitResult?.files || [];
+    for (let i = 0; i < files.length; i++) {
+      downloadSingleSplitFile(i);
+      if (files.length > 1) await sleep(450);
+    }
+  }
+
+  function canvasFormatSpec(requested) {
+    if (requested === 'png') return { mime: 'image/png', ext: 'png', quality: undefined };
+    if (requested === 'webp') return { mime: 'image/webp', ext: 'webp', quality: 0.92 };
+    return { mime: 'image/jpeg', ext: 'jpg', quality: 0.92 };
+  }
+
+  function imageOutputFilename(pageNum, ext) {
+    const base = safeBaseName(state.pdf.file?.name);
+    const naming = $('imageNamingSelect').value;
+    if (naming === 'padded') return `${base}_${String(pageNum).padStart(3, '0')}.${ext}`;
+    if (naming === 'numberonly') return `${pageNum}.${ext}`;
+    return `${base}_صفحة_${pageNum}.${ext}`;
+  }
+
+  /** Rasterize selected PDF pages to local image blobs. */
+  async function processPdfToImages() {
+    if (state.busy) return;
+    if (!state.pdf.pdfDoc) {
+      showToast('حمّل ملف PDF أولاً.', 'warning');
+      return;
+    }
+    if (!applyTypedRangeBeforeProcess()) return;
+    const selected = [...state.pdf.selectedPages].sort((a, b) => a - b);
+    if (!selected.length) {
+      showToast('حدد صفحة واحدة على الأقل.', 'warning');
+      return;
+    }
+    if (selected.length > LIMITS.maxImageExportPages) {
+      showToast(`تحويل الصور محدود إلى ${LIMITS.maxImageExportPages} صفحة في العملية الواحدة حفاظاً على الذاكرة.`, 'warning');
+      return;
+    }
+
+    invalidateImageExport();
+    const jobId = ++state.jobs.pdfToImages;
+    const pdfDocSnapshot = state.pdf.pdfDoc;
+    const requestedFormat = $('imageFormatSelect').value;
+    const scale = Number($('imageQualitySelect').value) || 2;
+    const spec = canvasFormatSpec(requestedFormat);
+    const progress = $('imagesExportProgress');
+    progress.classList.remove('hidden');
+    $('imagesExportListContainer').classList.add('hidden');
+    $('downloadImagesZipBtn').disabled = true;
+
+    await withLoader(`جارٍ تحويل ${selected.length} صفحة إلى صور`, `الدقة المختارة: ${scale}x`, async () => {
+      try {
+        for (let i = 0; i < selected.length; i++) {
+          if (jobId !== state.jobs.pdfToImages || pdfDocSnapshot !== state.pdf.pdfDoc) throw new DOMException('تم إلغاء العملية بسبب تغير التحديد أو المستند.', 'AbortError');
+          const pageNum = selected[i];
+          const percent = Math.round((i / selected.length) * 100);
+          $('imagesProgressBar').style.width = `${percent}%`;
+          $('imagesProgressText').textContent = `تحويل الصفحة ${pageNum} (${i + 1}/${selected.length})...`;
+          $('loadingDescription').textContent = $('imagesProgressText').textContent;
+          setLoaderProgress(percent, $('imagesProgressText').textContent);
+
+          const page = await pdfDocSnapshot.getPage(pageNum);
+          let viewport = page.getViewport({ scale });
+          const safeScale = Math.min(
+            1,
+            LIMITS.maxCanvasDimension / viewport.width,
+            LIMITS.maxCanvasDimension / viewport.height,
+            Math.sqrt(LIMITS.maxCanvasPixels / (viewport.width * viewport.height))
+          );
+          if (safeScale < 1) viewport = page.getViewport({ scale: scale * safeScale });
+
+          const canvas = document.createElement('canvas');
+          canvas.width = Math.max(1, Math.ceil(viewport.width));
+          canvas.height = Math.max(1, Math.ceil(viewport.height));
+          const ctx = canvas.getContext('2d', { alpha: spec.mime === 'image/png' || spec.mime === 'image/webp' });
+          if (!ctx) throw new Error('تعذر إنشاء مساحة الرسم في المتصفح.');
+          if (spec.mime === 'image/jpeg') {
+            ctx.fillStyle = '#ffffff';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+          }
+          await page.render({ canvasContext: ctx, viewport }).promise;
+          let blob = await canvasToBlob(canvas, spec.mime, spec.quality);
+          let actualSpec = spec;
+          if (requestedFormat === 'webp' && blob.type !== 'image/webp') {
+            actualSpec = canvasFormatSpec('jpeg');
+            blob = await canvasToBlob(canvas, actualSpec.mime, actualSpec.quality);
+          }
+          const filename = imageOutputFilename(pageNum, actualSpec.ext);
+          const previewUrl = URL.createObjectURL(blob);
+          if (jobId !== state.jobs.pdfToImages || pdfDocSnapshot !== state.pdf.pdfDoc) { URL.revokeObjectURL(previewUrl); throw new DOMException('تم إلغاء العملية بسبب تغير التحديد أو المستند.', 'AbortError'); }
+          state.imageExport.files.push({ blob, filename, previewUrl, pageNum, size: formatBytes(blob.size) });
+          canvas.width = 1;
+          canvas.height = 1;
+          page.cleanup?.();
+          if (i % 5 === 4) await sleep(0);
+        }
+
+        if (jobId !== state.jobs.pdfToImages) throw new DOMException('تم إلغاء العملية بسبب تغير التحديد.', 'AbortError');
+        $('imagesProgressBar').style.width = '100%';
+        $('imagesProgressText').textContent = `تم تحويل ${selected.length} صفحة بنجاح.`;
+        setLoaderProgress(100, `تم تحويل ${selected.length} صفحة.`);
+        renderImageExportList();
+        $('downloadImagesZipBtn').disabled = false;
+        $('downloadImagesZipText').textContent = window.JSZip ? `تحميل ${selected.length} صورة كـ ZIP` : `تحميل ${selected.length} صورة`;
+        showToast(`تم تحويل ${selected.length} صفحة إلى صور.`, 'success');
+      } catch (error) {
+        console.error('PDF to images error:', error);
+        invalidateImageExport();
+        if (error?.name !== 'AbortError') showToast(`تعذر تحويل الصفحات إلى صور: ${error?.message || 'خطأ غير معروف'}`, 'error');
+      } finally {
+        setTimeout(() => progress.classList.add('hidden'), 1200);
+      }
+    });
+  }
+
+  function renderImageExportList() {
+    const list = $('imagesExportList');
+    list.replaceChildren();
+    const fragment = document.createDocumentFragment();
+    state.imageExport.files.forEach((file, index) => {
+      const card = document.createElement('article');
+      card.className = 'bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col';
+      const preview = document.createElement('div');
+      preview.className = 'preview-trigger h-32 bg-slate-100 flex items-center justify-center overflow-hidden relative';
+      preview.tabIndex = 0;
+      preview.setAttribute('role', 'button');
+      preview.setAttribute('aria-label', `تكبير معاينة الصفحة ${file.pageNum}`);
+      preview.addEventListener('click', () => openPreview(file.previewUrl, file.filename, `الصفحة ${file.pageNum}`));
+      preview.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openPreview(file.previewUrl, file.filename, `الصفحة ${file.pageNum}`); }
+      });
+      const img = document.createElement('img');
+      img.src = file.previewUrl;
+      img.alt = `معاينة الصفحة ${file.pageNum}`;
+      img.loading = 'lazy';
+      img.className = 'max-h-full max-w-full object-contain';
+      const badge = document.createElement('div');
+      badge.className = 'absolute top-1.5 right-1.5 bg-slate-900/75 text-white text-[10px] font-bold px-1.5 py-0.5 rounded';
+      badge.textContent = `صفحة #${file.pageNum}`;
+      preview.append(img, badge);
+
+      const body = document.createElement('div');
+      body.className = 'p-2 flex flex-col gap-1';
+      const name = document.createElement('div');
+      name.className = 'text-[11px] font-bold text-slate-700 truncate';
+      name.title = file.filename;
+      name.textContent = file.filename;
+      const size = document.createElement('div');
+      size.className = 'text-[10px] text-slate-400';
+      size.textContent = file.size;
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'mt-1 w-full py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 rounded-lg text-xs font-bold flex items-center justify-center gap-1';
+      button.append(icon('fa-solid fa-download'), document.createTextNode(' تحميل'));
+      button.addEventListener('click', () => downloadSingleImage(index));
+      body.append(name, size, button);
+      card.append(preview, body);
+      fragment.appendChild(card);
+    });
+    list.appendChild(fragment);
+    $('imagesExportCount').textContent = String(state.imageExport.files.length);
+    $('imagesExportListContainer').classList.toggle('hidden', state.imageExport.files.length === 0);
+  }
+
+  async function downloadImagesResult() {
+    const files = state.imageExport.files;
+    if (!files.length) {
+      showToast('حوّل الصفحات إلى صور أولاً.', 'warning');
+      return;
+    }
+    if (!window.JSZip) {
+      await downloadAllImagesIndividually();
+      return;
+    }
+
+    await withLoader('جارٍ تجهيز ملف ZIP', 'يتم جمع الصور الناتجة دون نسخ إضافية غير ضرورية.', async () => {
+      const zip = await buildZip(files);
+      if (!zip) return;
+      const filename = `${safeBaseName(state.pdf.file?.name)}_صور_${files.length}_صفحة.zip`;
+      downloadBlob(zip, filename, 'application/zip');
+    });
+  }
+
+  function downloadSingleImage(index) {
+    const file = state.imageExport.files[index];
+    if (!file) return;
+    downloadBlob(file.blob, file.filename, file.blob.type || 'application/octet-stream');
+  }
+
+  async function downloadAllImagesIndividually() {
+    if (!state.imageExport.files.length) return;
+    showToast('قد يطلب المتصفح السماح بتنزيل عدة ملفات.', 'info');
+    for (let i = 0; i < state.imageExport.files.length; i++) {
+      downloadSingleImage(i);
+      await sleep(500);
+    }
+  }
+
+  /** Trigger a local browser download and revoke its temporary Blob URL later. */
+  function downloadBlob(dataOrBlob, filename, mimeType = 'application/octet-stream') {
+    try {
+      const blob = dataOrBlob instanceof Blob ? dataOrBlob : new Blob([dataOrBlob], { type: mimeType });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = String(filename || 'download').replace(/[\r\n]/g, '_');
+      link.style.display = 'none';
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), DOWNLOAD_URL_REVOKE_MS);
+    } catch (error) {
+      console.error('Download error:', error);
+      showToast('تعذر بدء التنزيل. استخدم متصفحاً حديثاً وتأكد من السماح بالتنزيلات.', 'error');
+    }
+  }
+
+  function wireDropZone(zone, input, chooseButton, onFiles, kind) {
+    const openPicker = () => input.click();
+    zone.addEventListener('click', (event) => {
+      if (event.target.closest('button')) return;
+      openPicker();
+    });
+    zone.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openPicker();
+      }
+    });
+    chooseButton.addEventListener('click', (event) => {
+      event.stopPropagation();
+      openPicker();
+    });
+    for (const name of ['dragenter', 'dragover']) {
+      zone.addEventListener(name, (event) => {
+        event.preventDefault();
+        zone.classList.add('drag-active');
+      });
+    }
+    for (const name of ['dragleave', 'drop']) {
+      zone.addEventListener(name, (event) => {
+        event.preventDefault();
+        zone.classList.remove('drag-active');
+      });
+    }
+    zone.addEventListener('drop', (event) => {
+      const files = [...(event.dataTransfer?.files || [])];
+      if (!files.length) return;
+      if (kind === 'pdf') onFiles(files[0]);
+      else onFiles(files);
+    });
+  }
+
+  function detectWebpCanvasSupport() {
+    try {
+      const canvas = document.createElement('canvas');
+      canvas.width = canvas.height = 1;
+      return canvas.toDataURL('image/webp').startsWith('data:image/webp');
+    } catch {
+      return false;
+    }
+  }
+
+  function arrayBufferToBase64(buffer) {
+    const bytes = new Uint8Array(buffer);
+    let binary = '';
+    const chunk = 0x8000;
+    for (let i = 0; i < bytes.length; i += chunk) binary += String.fromCharCode(...bytes.subarray(i, i + chunk));
+    return btoa(binary);
+  }
+
+  async function verifyIntegrity(bytes, integrity) {
+    const [algorithm, expected] = String(integrity).split('-', 2);
+    if (algorithm !== 'sha512' || !expected) throw new Error('صيغة SRI الخاصة بعامل PDF غير صالحة.');
+    if (!globalThis.crypto?.subtle) throw new Error('المتصفح لا يدعم Web Crypto المطلوب للتحقق من سلامة PDF Worker.');
+    const digest = await crypto.subtle.digest('SHA-512', bytes.slice(0));
+    if (arrayBufferToBase64(digest) !== expected) throw new Error('فشل التحقق من سلامة PDF Worker (SRI mismatch).');
+  }
+
+  function loadVerifiedWorkerOnMainThread(blobUrl) {
+    if (globalThis.pdfjsWorker?.WorkerMessageHandler) return Promise.resolve(true);
+    return new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = blobUrl;
+      script.async = true;
+      script.dataset.pdfStudioWorkerFallback = 'true';
+      script.onload = () => {
+        script.remove();
+        if (globalThis.pdfjsWorker?.WorkerMessageHandler) resolve(true);
+        else reject(new Error('تم تحميل PDF Worker لكن WorkerMessageHandler غير متاح.'));
+      };
+      script.onerror = () => {
+        script.remove();
+        reject(new Error('تعذر تشغيل PDF Worker الموثق في المسار المحلي.'));
+      };
+      document.head.appendChild(script);
+    });
+  }
+
+  async function configurePdfWorker() {
+    if (!window.pdfjsLib?.GlobalWorkerOptions) return false;
+    state.pdfWorkerReady = false;
+    state.pdfWorkerMode = 'none';
+    if (state.pdfWorkerUrl) {
+      URL.revokeObjectURL(state.pdfWorkerUrl);
+      state.pdfWorkerUrl = null;
+    }
+
+    const response = await fetch(PDF_WORKER.url, {
+      mode: 'cors',
+      credentials: 'omit',
+      cache: 'force-cache',
+      referrerPolicy: 'no-referrer',
+      integrity: PDF_WORKER.integrity
+    });
+    if (!response.ok) throw new Error(`تعذر تحميل PDF Worker (${response.status}).`);
+
+    const bytes = await response.arrayBuffer();
+    await verifyIntegrity(bytes, PDF_WORKER.integrity);
+    state.pdfWorkerUrl = URL.createObjectURL(new Blob([bytes], { type: 'application/javascript' }));
+    pdfjsLib.GlobalWorkerOptions.workerSrc = state.pdfWorkerUrl;
+
+    // file:// pages have an opaque origin (blob:null/...). Some browsers reject
+    // spawning a real Worker from that URL and PDF.js then falls back to a fake
+    // worker. Preloading the already SHA-512-verified blob on the main thread
+    // makes that fallback deterministic and keeps all PDF processing local.
+    const isOpaqueLocalOrigin = location.protocol === 'file:' || location.origin === 'null';
+    if (isOpaqueLocalOrigin || typeof Worker === 'undefined') {
+      await loadVerifiedWorkerOnMainThread(state.pdfWorkerUrl);
+      state.pdfWorkerMode = 'verified-main-thread';
+    } else {
+      state.pdfWorkerMode = 'verified-web-worker';
+    }
+
+    state.pdfWorkerReady = true;
+    return true;
+  }
+
+  async function ensureDependencies() {
+    const missing = [];
+    if (!window.PDFLib?.PDFDocument) missing.push('PDF-Lib');
+    if (!window.pdfjsLib?.getDocument) missing.push('PDF.js');
+    if (missing.length) showToast(`تعذر تحميل: ${missing.join('، ')}. تمنع سياسة الأمان تشغيل نسخة CDN غير متحقق منها.`, 'error');
+    if (!window.JSZip) showToast('JSZip غير متاح؛ سيظل التنزيل الفردي يعمل دون ZIP.', 'warning');
+
+    if (window.pdfjsLib?.getDocument) {
+      try {
+        await configurePdfWorker();
+      } catch (error) {
+        console.error('PDF worker integrity/load error:', error);
+        state.pdfWorkerReady = false;
+        showToast(`تعذر تهيئة محرك PDF.js: ${error?.message || 'خطأ غير معروف'}`, 'error');
+      }
+    }
+
+    if (!detectWebpCanvasSupport()) {
+      const option = $('imageFormatSelect')?.querySelector('option[value="webp"]');
+      if (option) {
+        option.disabled = true;
+        option.textContent = 'WEBP - غير مدعوم في هذا المتصفح';
+      }
+    }
+  }
+
+  function wireEvents() {
+    $('modalCancelBtn').addEventListener('click', closeConfirmModal);
+    $('modalConfirmBtn').addEventListener('click', () => {
+      const callback = modalCallback;
+      closeConfirmModal();
+      callback?.();
+    });
+    document.addEventListener('keydown', handleModalKeydown);
+    document.addEventListener('keydown', handlePreviewKeydown);
+    document.addEventListener('pointermove', updatePointerSort, { passive: true });
+    document.addEventListener('pointerup', endPointerSort);
+    document.addEventListener('pointercancel', endPointerSort);
+    $('previewModalCloseBtn').addEventListener('click', closePreview);
+    $('previewModal').addEventListener('click', (event) => { if (event.target === $('previewModal')) closePreview(); });
+
+    $('tabImgToPdf').addEventListener('click', () => switchTab('img-to-pdf'));
+    $('tabPdfSplit').addEventListener('click', () => switchTab('pdf-split'));
+    $('tabImgToPdf').addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowLeft') { event.preventDefault(); switchTab('pdf-split'); $('tabPdfSplit').focus(); }
+    });
+    $('tabPdfSplit').addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowRight') { event.preventDefault(); switchTab('img-to-pdf'); $('tabImgToPdf').focus(); }
+    });
+
+    ['a4Orientation', 'a4Margin', 'a4Fit'].forEach((id) => $(id).addEventListener('change', invalidateImageConversion));
+    $('clearAllImagesBtn').addEventListener('click', confirmClearImages);
+    $('convertImagesBtn').addEventListener('click', convertImagesToPdf);
+    $('downloadImagesBtn').addEventListener('click', downloadConvertedPdf);
+
+    wireDropZone($('dropZoneImages'), $('imageInput'), $('chooseImagesBtn'), handleImageFiles, 'images');
+    $('imageInput').addEventListener('change', async (event) => {
+      const files = [...event.target.files];
+      event.target.value = '';
+      if (files.length) await handleImageFiles(files);
+    });
+
+    wireDropZone($('dropZonePdf'), $('pdfFileInput'), $('choosePdfBtn'), loadPdfDocument, 'pdf');
+    $('pdfFileInput').addEventListener('change', async (event) => {
+      const file = event.target.files?.[0];
+      event.target.value = '';
+      if (file) await loadPdfDocument(file);
+    });
+
+    $('resetPdfBtn').addEventListener('click', resetPdfSplitter);
+    $('pageRangeInput').addEventListener('input', (event) => handleRangeInputTyping(event.target.value));
+    $('pageRangeInput').addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        applyRangeInput();
+      }
+    });
+    $('applyRangeBtn').addEventListener('click', applyRangeInput);
+    $('selectAllBtn').addEventListener('click', () => selectAllPdfPages(true));
+    $('clearSelectionBtn').addEventListener('click', () => selectAllPdfPages(false));
+    $('selectOddBtn').addEventListener('click', selectOddPages);
+    $('selectEvenBtn').addEventListener('click', selectEvenPages);
+    $('splitModeSelect').addEventListener('change', invalidateSplitConversion);
+    $('convertPdfSplitBtn').addEventListener('click', processPdfSplit);
+    $('downloadPdfSplitBtn').addEventListener('click', downloadSplitResult);
+    $('downloadSplitZipInlineBtn').addEventListener('click', downloadSplitResult);
+
+    ['imageFormatSelect', 'imageQualitySelect', 'imageNamingSelect'].forEach((id) => $(id).addEventListener('change', invalidateImageExport));
+    $('convertToImagesBtn').addEventListener('click', processPdfToImages);
+    $('downloadImagesZipBtn').addEventListener('click', downloadImagesResult);
+    $('downloadImagesZipInlineBtn').addEventListener('click', downloadImagesResult);
+    $('downloadImagesIndividualBtn').addEventListener('click', downloadAllImagesIndividually);
+
+    window.addEventListener('pagehide', (event) => {
+      if (event.persisted) return;
+      for (const image of state.images) URL.revokeObjectURL(image.url);
+      cleanupImageExport();
+      state.pdf.thumbObserver?.disconnect();
+      void releasePdfResources();
+      if (state.pdfWorkerUrl) { URL.revokeObjectURL(state.pdfWorkerUrl); state.pdfWorkerUrl = null; }
+      state.pdfWorkerReady = false;
+      state.pdfWorkerMode = 'none';
+    });
+  }
+
+  function runSelfTests() {
+    const cases = [];
+    const check = (name, condition) => cases.push({ name, pass: Boolean(condition) });
+    check('normalize Arabic digits', normalizeDigits('١٢٣۴۵') === '12345');
+    check('safe filename strips separators', !/[\/:*?"<>|]/.test(safeBaseName('a/b:c?.pdf')));
+    check('strict range rejects decimal-like input', Boolean(parsePageRange('2.5', 10).error));
+    check('strict range rejects doubled dash', Boolean(parsePageRange('1--3', 10).error));
+    check('range accepts Arabic digits', formatRangeString([...parsePageRange('١-٣،٥', 10).pages]) === '1-3, 5');
+    check('range canonicalization', formatRangeString([1, 2, 3, 5, 7, 8]) === '1-3, 5, 7-8');
+    const failed = cases.filter((test) => !test.pass);
+    console.groupCollapsed(`[PDF Studio self-test] ${cases.length - failed.length}/${cases.length} passed`);
+    console.table(cases);
+    console.groupEnd();
+    return { total: cases.length, passed: cases.length - failed.length, failed };
+  }
+
+  async function initialize() {
+    $('confirmModal').setAttribute('aria-hidden', 'true');
+    $('previewModal').setAttribute('aria-hidden', 'true');
+    $('loadingOverlay').setAttribute('aria-hidden', 'true');
+    switchTab('img-to-pdf');
+    wireEvents();
+    renderImagesGrid();
+    updatePageSelectionDisplay(true);
+    await ensureDependencies();
+    if (/[?&]selftest=1(?:&|$)/.test(location.search) || location.hash === '#selftest') {
+      const result = runSelfTests();
+      showToast(`اختبارات ذاتية: ${result.passed}/${result.total} ناجحة.`, result.failed.length ? 'error' : 'success');
+    }
+  }
+
+  void initialize();
+})();
+
+  </script>
+</body>
+</html>
