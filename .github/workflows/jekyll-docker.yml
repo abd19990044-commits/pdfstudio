@@ -1,20 +1,63 @@
-name: Jekyll site CI
+name: Deploy PDF Studio to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
 
 jobs:
-  build:
-
+  deploy:
+    name: Validate and deploy static website
     runs-on: ubuntu-latest
-
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-    - uses: actions/checkout@v4
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate static site
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          page = Path('index.html')
+          assert page.is_file(), 'Missing index.html'
+          html = page.read_text(encoding='utf-8')
+          assert '<html lang="ar" dir="rtl">' in html, 'Missing Arabic RTL document metadata'
+          assert '<script>' in html and '</script>' in html, 'Missing application logic'
+          for dependency in ('pdf-lib@', 'pdf.min.js', 'jszip.min.js'):
+              assert dependency in html, f'Missing dependency: {dependency}'
+          for feature in ('convertImagesToPdf', 'processPdfSplit', 'processPdfToImages'):
+              assert feature in html, f'Missing feature: {feature}'
+          print('Static deployment checks passed.')
+          PY
+
+      - name: Prepare publication artifact
+        shell: bash
+        run: |
+          mkdir -p _site
+          cp index.html _site/index.html
+          touch _site/.nojekyll
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
